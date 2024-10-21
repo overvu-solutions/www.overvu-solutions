@@ -7,21 +7,177 @@
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 }
+
+/* @font-face {
+  font-family: "bradford";
+  src: url("fonts/BradfordLLWeb-Regular.woff") format('woff');
+} */
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+
+body {
+  /* font-family: "bradford"; */
+  font-size: 1.1em;
+  line-height: 1.4em;
+  margin: 0;
+  width: 76vw;
+  max-width: 930px;
+  margin: auto;
+  text-align: center;
+}
+
+/* .section img {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+  filter: grayscale(100%);
+} */
+
+#footer ul {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#footer ul li {
+  display: inline-block;
+  margin: 12px 24px;
+}
+
+.big {
+  font-size: 1.25em;
+}
+
+.spacer {
+  height: 72px;
+}
+
+.text-spacer {
+  height: 24px;
+}
+
+#logo {
+  display: flex;
+  justify-content: center;
+}
+
+#logo img {
+  width: 50%;
+}
+
+.logo-small img {
+  width: 25%;
+}
+
+#footer {
+  margin: auto;
+  text-align: center;
+}
+
+
+.light {
+  opacity: 50%;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 42px;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.section {
+  /* height: 20%; */
+  width: 24%;
+  /* position: relative; */
+  /* text-align: center; */
+}
+
+.description {
+  padding: 0 24px 24px 24px;
+  text-align: center;
+}
+
+/* @media (max-width: 1200px) { 
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.section {
+  height: 26%;
+  width: 26%;
+  position: relative;
+  text-align: center;
+}
+} */
+
+/* @media (max-width: 900px) { 
+body {
+  font-size: 1em;
+}
+
+.container img {
+  width: 180px;
+}
+
+.spacer {
+  height: 48px;
+}
+
+#logo img {
+  width: 70%;
+}
+
+.logo-small img {
+  width: 70%;
+}
+
+.container {
+  flex-direction: column;
+}
+
+.section {
+  width: 60%;
+  height: 60%;
+}
+
+ul li {
+  display: block;
+}
+
+.text-block {
+  width: 100%;
+}
+} */
