@@ -9,6 +9,7 @@ const font = Playfair_Display({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: "Generative AI & Large Language Model (LLM) Consulting - Overvu Solutions",
   description: "Unlock the full potential of Generative AI and Large Language Models with Overvu Solutions. Our tailored consulting services help businesses deploy, optimize, and integrate AI models for transformative business outcomes.",
+  keywords: ["Generative AI consulting", "LLM consulting", "AI model optimization", "custom AI solutions", "AI business transformation", "GPT consulting", "NLP solutions", "AI-powered automation", "enterprise AI", "machine learning consulting"]
 };
 
 export default function RootLayout({
