@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Mail, File, AppWindowMac, Globe } from "lucide-react";
 
 const Section = ({pic, alt, name, link}: {pic: string; alt: string; name: string; link: string}) => {
-  return <div className="section w-full md:w-1/4 flex flex-col">
+  return <div className=" w-full md:w-1/4 flex flex-col">
     <div className="p-0 flex justify-center">
       <img src={pic} className="rounded-full w-36 h-36" />
     </div>
