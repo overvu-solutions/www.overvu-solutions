@@ -35,7 +35,7 @@ export default function Home() {
     <div>
       <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-1 font-[family-name:var(--font-geist-sans)]">
         <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-          <div className="flex w-full justify-center pt-8 pb-16">
+          <div className="flex w-full justify-center pt-8 pb-1">
             <Image
               alt="logo"
               loading="lazy"
@@ -47,7 +47,7 @@ export default function Home() {
               src="/logo4.png"
             />
           </div>
-          <div className="text-2xl text-center mt-10">
+          <div className="text-2xl text-center mt-4">
             Overvue is an independent GenAI consulting and product company.
             Founded by AI experts from Revolut, Google, Techstars and Cambridge.
             We saw the untapped potential of GenAI and LLMs in automation,
@@ -55,7 +55,7 @@ export default function Home() {
             to businesses across industries.
           </div>
 
-          <div className="w-full pt-16 sm:pt-16">
+          <div className="w-full pt-48 sm:pt-48">
             <ul className="flex flex-wrap items-center justify-center gap-x-10 sm:gap-x-20">
               <li className="h-[50px] w-[130px] sm:h-auto sm:w-[170px]">
                 <Image
