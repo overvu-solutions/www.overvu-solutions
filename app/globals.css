@@ -46,10 +46,10 @@ body {
   font-size: 1.1em;
   line-height: 1.4em;
   margin: 0;
-  width: 76vw;
-  max-width: 930px;
-  margin: auto;
-  text-align: center;
+  /* width: 76vw; */
+  /* max-width: 930px; */
+  /* margin: auto; */
+  /* text-align: center; */
 }
 
 /* .section img {
