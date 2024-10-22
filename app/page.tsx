@@ -55,7 +55,7 @@ export default function Home() {
             to businesses across industries.
           </div>
 
-          <div className="w-full pt-12 sm:pt-12">
+          <div className="w-full pt-16 sm:pt-16">
             <ul className="flex flex-wrap items-center justify-center gap-x-10 sm:gap-x-20">
               <li className="h-[50px] w-[130px] sm:h-auto sm:w-[170px]">
                 <Image
