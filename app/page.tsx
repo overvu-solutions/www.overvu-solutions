@@ -47,13 +47,16 @@ export default function Home() {
               src="/logo4.png"
             />
           </div>
-          <div className="text-2xl text-center mt-4">
-            Overvue is an independent GenAI consulting and product company.
-            Founded by AI experts from Revolut, Google, Techstars and Cambridge.
-            We saw the untapped potential of GenAI and LLMs in automation,
-            decision-making, and efficiency, and are driven to bring that value
-            to businesses across industries.
+          <div className="w-full flex justify-center">
+            <div className="text-xl text-center mt-4 max-w-screen-md">
+              Overvue is an independent GenAI consulting and product company.
+              Founded by AI experts from Revolut, Google, Techstars and Cambridge.
+              We saw the untapped potential of GenAI and LLMs in automation,
+              decision-making, and efficiency, and are driven to bring that value
+              to businesses across industries.
+            </div>
           </div>
+
 
           <div className="w-full pt-48 sm:pt-48">
             <ul className="flex flex-wrap items-center justify-center gap-x-10 sm:gap-x-20">
