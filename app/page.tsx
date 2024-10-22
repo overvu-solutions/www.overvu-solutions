@@ -118,7 +118,7 @@ export default function Home() {
                   decoding="async"
                   data-nImage="1"
                   className="h-full w-full"
-                  src="/media/wix.svg"
+                  src="/media/wix1.svg"
                 />
               </li>
 
