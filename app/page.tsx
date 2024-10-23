@@ -35,7 +35,7 @@ export default function Home() {
     <div>
       <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-1 font-[family-name:var(--font-geist-sans)]">
         <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-          <div className="flex w-full justify-center pt-8 pb-1">
+          <div className="flex w-full justify-center pt-8">
             <Image
               alt="logo"
               loading="lazy"
@@ -48,78 +48,80 @@ export default function Home() {
             />
           </div>
           <div className="w-full flex justify-center">
-            <div className="text-xl text-center mt-4 max-w-screen-md">
-              Overvue is an independent GenAI consulting and product company.
-              Founded by AI experts from Revolut, Google, Techstars and Cambridge.
-              We saw the untapped potential of GenAI and LLMs in automation,
-              decision-making, and efficiency, and are driven to bring that value
-              to businesses across industries.
+            <div className=" text-center mt-1 max-w-screen-md">
+              <div className="text-left text-3xl md:text-6xl pb-2 mb-12">
+                Overvue is an independent GenAI consulting and product company
+              </div>
+              <div className="text-left text-xl mt-6">
+                Founded by AI experts from Revolut, Google, Techstars and Cambridge.
+                We saw the untapped potential of GenAI and LLMs in automation,
+                decision-making, and efficiency, and are driven to bring that value
+                to businesses across industries.
+              </div>
             </div>
           </div>
-
-
-          <div className="w-full pt-48 sm:pt-48">
+          <div className="w-full pt-24 sm:pt-28">
             <ul className="flex flex-wrap items-center justify-center gap-x-10 sm:gap-x-20">
-              <li className="h-[50px] w-[130px] sm:h-auto sm:w-[170px]">
+              <li className="h-auto w-[130px] sm:h-auto sm:w-[170px]">
                 <Image
                   alt="Cambridge"
                   loading="lazy"
                   width="637"
                   height="246"
                   decoding="async"
-                  data-nImage="1"
+                  // data-nImage="1"
                   className="h-full w-full"
                   src="/media/cambridge.jpg"
                 />
               </li>
 
-              <li className="h-[70px] w-[70px] sm:inline sm:h-[100px] sm:w-[150px]">
+              <li className="h-auto w-[120px] sm:inline sm:h-[100px] sm:w-[150px]">
                 <Image
                   alt="Revolut"
                   loading="lazy"
                   width="909"
                   height="589"
                   decoding="async"
-                  data-nImage="1"
+                  // data-nImage="1"
                   className="h-full w-full"
                   src="/media/revolut.svg"
                 />
               </li>
 
-              <li className="h-[50px] w-[50px] sm:h-[50px] sm:w-[50px]">
+              <li className="h-[40px] w-[40px] sm:h-[50px] sm:w-[50px]">
                 <Image
                   alt="Google"
                   loading="lazy"
                   width="60"
                   height="146"
                   decoding="async"
-                  data-nImage="1"
+                  // data-nImage="1"
                   className="h-full w-full"
                   src="/media/google.svg"
                 />
               </li>
 
-              <li className="h-[70px] w-[100px] sm:h-[100px] sm:w-[100px]">
+              <li className="h-auto w-[120px] sm:h-[100px] sm:w-[100px]">
                 <Image
                   alt="techstars"
                   loading="lazy"
                   width="731"
                   height="137"
                   decoding="async"
-                  data-nImage="1"
+                  // data-nImage="1"
                   className="h-full w-full"
                   src="/media/techstars.svg"
                 />
               </li>
 
-              <li className="h-[70px] w-[70px] sm:inline sm:h-[100px] sm:w-[100px]">
+              <li className="h-[65px] w-[65px] sm:inline sm:h-[100px] sm:w-[100px]">
                 <Image
                   alt="Wix"
                   loading="lazy"
                   width="909"
                   height="589"
                   decoding="async"
-                  data-nImage="1"
+                  // data-nImage="1"
                   className="h-full w-full"
                   src="/media/wix1.svg"
                 />
@@ -141,6 +143,7 @@ export default function Home() {
           </div>
 
           <div className="w-full pt-28 sm:pt-56">
+            <h3 className="text-center text-3xl mb-14">Team</h3>
             <div className="flex flex-col md:flex-row justify-center flex-wrap gap-10 md:gap-20 ">
               <Section
                 pic="i/pavel.jpg"
@@ -163,23 +166,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* <div className="w-full text-left">
-            <h3 className="font-2xl">Story</h3>
-            <p>
-              <strong>Realization:</strong> We saw the untapped potential of
-              Generative AI and Large Language Models (LLMs) in solving business
-              problems
-            </p>
-            <p>
-              <strong>Problem:</strong> Many businesses struggle to understand
-              and implement AI effectively, missing out on the benefits of
-              automation, better decision-making, and efficiency
-            </p>
-            <p>
-              <strong>Mission:</strong> Set out to make AI solutions accessible,
-              practical, and impactful for organizations
-            </p>
-          </div> */}
         </main>
 
         <footer className="pt-52 pb-12 row-start-3 flex gap-6 flex-wrap items-center justify-center">

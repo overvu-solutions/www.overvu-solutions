@@ -7,20 +7,21 @@ export default function Company() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-1 font-[family-name:var(--font-geist-sans)]">
       <header>
-        <h2>Overvu Solutions</h2>
       </header>
+
       <main className="flex flex-col">
         <div className="text-left">
-          <h3 className="text-2xl">Company</h3>
+          <h3 className="text-center text-2xl">Company</h3>
           <div className="pl-4 mt-5">
             <ul>
-              <li>Address: xxxxx, xxxxx, London, United Kingdom</li>
-              <li>Email: <a href="mailto:partners@overvu.solutions">partners@overvu.solutions</a></li>
-              <li>Phone: +44 </li>
+              <li><strong>Address</strong>: xxxxx, xxxxx, London, United Kingdom</li>
+              <li><strong>Email</strong>: <a href="mailto:partners@overvu.solutions">partners@overvu.solutions</a></li>
+              <li><strong>Phone</strong>: +44 </li>
             </ul>
           </div>
         </div>
-      
+
+     
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         <a

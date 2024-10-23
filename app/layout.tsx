@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Playfair_Display } from "next/font/google";
+import { Playfair_Display, Literata } from "next/font/google";
 
 import "./globals.css";
 import Image from "next/image";
 
-const font = Playfair_Display({ subsets: ["latin"] });
+const font = Literata({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Overvu | Generative AI & Large Language Model (LLM) Consulting",
@@ -33,14 +33,16 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${font.className} `}>
         <div>
-          {/* <header className=" px-6 mt-4 ">
-            <div className="flex w-full mt-2  w-full">
+          <header className=" px-6 mt-4 ">
+            <div className="flex justify-between text-3xl uppercase w-full mt-2  w-full">
               <div className="self-start">
-                overvue
+              <a href="/">ㄖvervue</a>
               </div>
-              
+              <div className="self-start">
+                <a href="mailto:partners@overvue.solutions" className=" hover:underline hover:underline-offset-4">contact</a>
+              </div>              
             </div>
-          </header> */}
+          </header>
           <div className="max-w-full	md:max-w-screen-lg	relative	mx-auto">
             {children}
           </div>
