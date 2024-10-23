@@ -178,7 +178,7 @@ export default function Home() {
             <Mail size={16} />
             Mail
           </a>
-          <a
+          {/* <a
             className="flex items-center gap-2 hover:underline hover:underline-offset-4"
             href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
             target="_blank"
@@ -195,7 +195,7 @@ export default function Home() {
           >
             <AppWindowMac size={16} />
             Examples
-          </a>
+          </a> */}
           <Link
             className="flex items-center gap-2 hover:underline hover:underline-offset-4"
             href="/company"
