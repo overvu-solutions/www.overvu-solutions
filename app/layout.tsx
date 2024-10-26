@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Literata } from "next/font/google";
+import { Mail, File, AppWindowMac, Globe } from "lucide-react";
 
 import "./globals.css";
 import Image from "next/image";
+import Link from "next/link";
 
 const font = Literata({ subsets: ["latin"] });
 
@@ -32,8 +34,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${font.className} `}>
-        <div>
-          <header className=" px-6 mt-4 ">
+        <div className="md:max-w-screen-lg mx-auto">
+          <header className="px-6 mt-4 ">
             <div className="flex justify-between text-3xl uppercase w-full mt-2  w-full">
               <div className="self-start">
               <a href="/">ㄖvervue</a>
@@ -43,9 +45,47 @@ export default function RootLayout({
               </div>              
             </div>
           </header>
-          <div className="max-w-full	md:max-w-screen-lg	relative	mx-auto">
+          <div className="max-w-full	relative	mx-auto">
             {children}
           </div>
+          <footer className="pt-52 pb-12 row-start-3 flex gap-6 flex-wrap items-center justify-center">
+          <a
+            className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+            href="mailto:partners@overvu.solutions"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Mail size={16} />
+            Mail
+          </a>
+          {/* <a
+            className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <File size={16} />
+            Learn
+          </a>
+          <a
+            className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <AppWindowMac size={16} />
+            Examples
+          </a> */}
+          <Link
+            className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+            href="/company"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Globe size={16} />
+            Company
+          </Link>
+        </footer>          
         </div>
       </body>
     </html>
