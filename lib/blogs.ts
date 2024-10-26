@@ -1,3 +1,5 @@
+/* eslint-disable  @typescript-eslint/no-explicit-any */
+
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
@@ -25,6 +27,7 @@ export function getSortedPostsData() {
     };
   });
   // Sort posts by date
+  // @typescript-eslint/no-explicit-any no
   return allPostsData.sort((a: any, b: any) => {
     if (a.date < b.date) {
       return 1;
