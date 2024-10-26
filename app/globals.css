@@ -101,12 +101,8 @@ body {
   opacity: 50%;
 }
 
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  /* gap: 42px; */
-  /* align-items: center; */
-  justify-content: center;
+.header {
+  margin: 120px 0 80px;
 }
 
 

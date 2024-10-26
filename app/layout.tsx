@@ -34,31 +34,46 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${font.className} `}>
-        <div className="md:max-w-screen-lg mx-auto">
-          <header className="px-6 mt-4 ">
-            <div className="flex justify-between text-3xl uppercase w-full mt-2  w-full">
-              <div className="self-start">
-              <a href="/">ㄖvervue</a>
-              </div>
-              <div className="self-start">
-                <a href="mailto:partners@overvue.solutions" className=" hover:underline hover:underline-offset-4">contact</a>
-              </div>              
-            </div>
-          </header>
-          <div className="max-w-full	relative	mx-auto">
-            {children}
-          </div>
-          <footer className="pt-52 pb-12 row-start-3 flex gap-6 flex-wrap items-center justify-center">
-          <a
-            className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-            href="mailto:partners@overvu.solutions"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Mail size={16} />
-            Mail
+        <header className="header flex  justify-center items-baseline w-full mt-2 w-full ">
+          <a className="text-2xl" href="/">
+            ㄖVERVUE
           </a>
-          {/* <a
+
+          <nav className="ml-20 flex justify-start  gap-7 text-xl">
+            {/* <a
+              href="mailto:partners@overvue.solutions"
+              className=" hover:underline hover:underline-offset-4"
+            >
+              Team
+            </a> */}
+            <a
+              href="mailto:partners@overvue.solutions"
+              className=" hover:underline hover:underline-offset-4"
+            >
+              Mail
+            </a>
+            {/* <a
+              href="mailto:partners@overvue.solutions"
+              className=" hover:underline hover:underline-offset-4"
+            >
+              Blog
+            </a> */}
+          </nav>
+        </header>
+
+        <div className="md:max-w-screen-lg mx-auto">
+          <div className="max-w-full	relative	mx-auto">{children}</div>
+          <footer className="pt-52 pb-12 row-start-3 flex gap-6 flex-wrap items-center justify-center">
+            <a
+              className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+              href="mailto:partners@overvu.solutions"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Mail size={16} />
+              Mail
+            </a>
+            {/* <a
             className="flex items-center gap-2 hover:underline hover:underline-offset-4"
             href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
             target="_blank"
@@ -76,16 +91,16 @@ export default function RootLayout({
             <AppWindowMac size={16} />
             Examples
           </a> */}
-          <Link
-            className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-            href="/company"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Globe size={16} />
-            Company
-          </Link>
-        </footer>          
+            <Link
+              className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+              href="/company"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Globe size={16} />
+              Company
+            </Link>
+          </footer>
         </div>
       </body>
     </html>
