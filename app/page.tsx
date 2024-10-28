@@ -41,7 +41,7 @@ export default function Home() {
           decoding="async"
           data-nImage="1"
           className="h-auto w-60"
-          src="/logo4.png"
+          src="/hero.png"
         />
       </div>
       <div className="w-full flex justify-center">
