@@ -34,11 +34,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${font.className} `}>
-        <header className="header flex  justify-center items-baseline w-full mt-2 w-full ">
+        <header className="header flex justify-center items-baseline w-full mt-2 w-full ">
           <a className="text-2xl" href="/">
             ㄖVERVUE
           </a>
-
           <nav className="ml-20 flex justify-start  gap-7 text-xl">
             {/* <a
               href="mailto:partners@overvue.solutions"
