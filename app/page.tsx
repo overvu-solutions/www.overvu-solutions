@@ -132,7 +132,7 @@ export default function Home() {
           <div className="flex flex-row justify-start flex-wrap gap-2 md:gap-2 mb-10 ">
             <Avatar
               pic="i/pavel.jpg"
-              name="Pavel Grachev"
+              name="Pavel Grachev-Mousset"
               link="https://www.linkedin.com/in/pgrach/"
             />
             <Avatar
