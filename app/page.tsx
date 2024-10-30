@@ -142,6 +142,11 @@ export default function Home() {
               name="Yaniv Proselkov"
               link="https://www.linkedin.com/in/yaniv-proselkov/"
             />
+            <Avatar
+              pic="i/sripaad.jpg"
+              name="Sripaad Srinivasan"
+              link="https://www.linkedin.com/in/sripaad-srinivasan/"
+            />            
           </div>
           <div className="justify-center">
             <div className="text-justify text-xl max-w-screen-md mb-4">
