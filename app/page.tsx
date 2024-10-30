@@ -112,15 +112,11 @@ export default function Home() {
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start max-w-screen-md">
         <div className="w-full flex justify-center">
           <div className=" text-center mt-1 max-w-screen-md">
-            <div className="text-left text-3xl md:text-4xl pb-2 mb-12">
-              Overvue is an independent GenAI consulting and product company
+            <div className="text-center text-3xl md:text-3xl pb-2 mb-12">
+              We are the team of scientists and engineers researching and building LLM/ML products.  
             </div>
-            <div className="text-left text-xl mt-6 text-justify">
-              We are a team of scientists and startup engineers researching and
-              implementing AI/LLM solutions. We know how to build startups from
-              0 to 1 as we did it on our own.
-            </div>
-            <div className="text-left text-xl mt-6 text-justify">
+            <div className="text-xl mt-6 text-justify">
+              We know how to build startups from 0 to 1 as we did it on our own.
               Founded by AI experts from Revolut, Google, Techstars and
               Cambridge. We saw the untapped potential of GenAI and LLMs in
               automation, decision-making, and efficiency, and are driven to
@@ -128,7 +124,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="w-full justify-center pt-28 sm:pt-28">
+        <div className="w-full justify-center pt-20">
           <h3 className="text-center text-3xl mb-14">Team</h3>
           <div className="flex flex-col md:flex-row justify-start flex-wrap gap-2 md:gap-2 mb-10 ">
             <Avatar

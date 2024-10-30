@@ -72,33 +72,8 @@ export default function RootLayout({
               <Mail size={16} />
               Mail
             </a>
-            {/* <a
-            className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <File size={16} />
-            Learn
-          </a>
-          <a
-            className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <AppWindowMac size={16} />
-            Examples
-          </a> */}
-            <Link
-              className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-              href="/company"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Globe size={16} />
-              Company
-            </Link>
+            
+            
           </footer>
         </div>
       </body>
