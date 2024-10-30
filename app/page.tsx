@@ -11,18 +11,20 @@ const Avatar = ({
 }) => {
   const w = "25";
   return (
-    <div className=" w-full md:w-24 flex flex-col mx-4">
-      <div className="pb-3 flex justify-center">
-        <img
-          src={pic}
-          className={`grayscale hover:grayscale-0 duration-500 rounded-full avatar`}
-          alt=""
-        />
-      </div>
-      <div className="flex text-center">
-        <a href={link}>
-          <h5 className="underline">{name}</h5>
-        </a>
+    <div className=" w-14 md:w-24 flex flex-col mx-4">
+      <div className="mx-auto">
+        <div className="pb-3 flex justify-center">
+          <img
+            src={pic}
+            className={`grayscale hover:grayscale-0 duration-500 rounded-full avatar`}
+            alt=""
+          />
+        </div>
+        <div className="flex text-center">
+          <a href={link}>
+            <h5 className="underline">{name}</h5>
+          </a>
+        </div>
       </div>
     </div>
   );
@@ -113,7 +115,8 @@ export default function Home() {
         <div className="w-full flex justify-center">
           <div className=" text-center mt-1 max-w-screen-md">
             <div className="text-center text-3xl md:text-3xl pb-2 mb-12">
-              We are the team of scientists and engineers researching and building LLM/ML products.  
+              We are the team of scientists and engineers researching and
+              building LLM/ML products.
             </div>
             <div className="text-xl mt-6 text-justify">
               We know how to build startups from 0 to 1 as we did it on our own.
@@ -126,7 +129,7 @@ export default function Home() {
         </div>
         <div className="w-full justify-center pt-20">
           <h3 className="text-center text-3xl mb-14">Team</h3>
-          <div className="flex flex-col md:flex-row justify-start flex-wrap gap-2 md:gap-2 mb-10 ">
+          <div className="flex flex-row justify-start flex-wrap gap-2 md:gap-2 mb-10 ">
             <Avatar
               pic="i/pavel.jpg"
               name="Pavel Grachev"
@@ -146,17 +149,21 @@ export default function Home() {
               pic="i/sripaad.jpg"
               name="Sripaad Srinivasan"
               link="https://www.linkedin.com/in/sripaad-srinivasan/"
-            />            
+            />
           </div>
           <div className="justify-center">
             <div className="text-justify text-xl max-w-screen-md mb-4">
-            Our team blends academic with industry know-how. Our team is a blend of academic depth and hands-on engineering expertise. 
-            On the scientific front, we specialize in the foundations of machine learning and LLMs, with research spanning model fine-tuning, 
-            benchmarking, and advanced network protocols. 
+              Our team blends academic with industry know-how. Our team is a
+              blend of academic depth and hands-on engineering expertise. On the
+              scientific front, we specialize in the foundations of machine
+              learning and LLMs, with research spanning model fine-tuning,
+              benchmarking, and advanced network protocols.
             </div>
             <div className="text-justify text-xl max-w-screen-md">
-            On the engineering side, building workflows and solutions based on LLMs for different use cases with
-            understanding of proc and cons of LLMs. Moreover, creating infrastructure for data pipelines that is a fuel for any LLM project.
+              On the engineering side, building workflows and solutions based on
+              LLMs for different use cases with understanding of proc and cons
+              of LLMs. Moreover, creating infrastructure for data pipelines that
+              is a fuel for any LLM project.
             </div>
           </div>
           <div className="w-full pt-10 sm:pt-10">

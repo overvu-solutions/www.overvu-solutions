@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Literata } from "next/font/google";
-import { Mail, File, AppWindowMac, Globe } from "lucide-react";
+import { Mail, AppWindowMac, Globe } from "lucide-react";
+import LinkedIn from "@/components/svg/LinkedIn";
 
 import "./globals.css";
 import Image from "next/image";
@@ -51,18 +52,13 @@ export default function RootLayout({
             >
               Mail
             </a>
-            {/* <a
-              href="mailto:partners@overvue.solutions"
-              className=" hover:underline hover:underline-offset-4"
-            >
-              Blog
-            </a> */}
+            
           </nav>
         </header>
 
         <div className="md:max-w-screen-lg mx-auto">
           <div className="max-w-full	relative	mx-auto">{children}</div>
-          <footer className="pt-52 pb-12 row-start-3 flex gap-6 flex-wrap items-center justify-center">
+          <footer className="pt-52 pb-12 row-start-3 flex gap-10 flex-wrap items-center justify-center">
             <a
               className="flex items-center gap-2 hover:underline hover:underline-offset-4"
               href="mailto:partners@overvu.solutions"
@@ -72,7 +68,15 @@ export default function RootLayout({
               <Mail size={16} />
               Mail
             </a>
-            
+            <a
+              className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+              href="https://www.linkedin.com/company/overvue-solutions/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <LinkedIn   />
+              LinkedIn
+            </a>
             
           </footer>
         </div>
