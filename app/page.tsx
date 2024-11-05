@@ -153,17 +153,14 @@ export default function Home() {
           </div>
           <div className="justify-center">
             <div className="text-justify text-xl max-w-screen-md mb-4">
-              Our team blends academic with industry know-how. Our team is a
-              blend of academic depth and hands-on engineering expertise. On the
-              scientific front, we specialize in the foundations of machine
-              learning and LLMs, with research spanning model fine-tuning,
-              benchmarking, and advanced network protocols.
+              Our team combines academic depth with practical industry expertise. On the scientific front, we specialize in the foundations of machine learning and LLMs, with research spanning model fine-tuning, benchmarking, and advanced network protocols.
+
+
             </div>
             <div className="text-justify text-xl max-w-screen-md">
-              On the engineering side, building workflows and solutions based on
-              LLMs for different use cases with understanding of proc and cons
-              of LLMs. Moreover, creating infrastructure for data pipelines that
-              is a fuel for any LLM project.
+              On the engineering side, we build workflows and solutions based on LLMs for various use cases, with a clear understanding of their pros and cons. Additionally, we create infrastructure for data pipelines, which fuel any LLM project.
+
+
             </div>
           </div>
           <div className="w-full pt-10 sm:pt-10">
