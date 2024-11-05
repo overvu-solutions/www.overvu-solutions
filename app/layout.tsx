@@ -43,13 +43,13 @@ export default function RootLayout({
           </a>
           <nav className="ml-20 flex justify-start  gap-7 text-xl">
             {/* <a
-              href="mailto:partners@overvue.solutions"
+              href="mailto:partners@overvu.solutions"
               className=" hover:underline hover:underline-offset-4"
             >
               Team
             </a> */}
             <a
-              href="mailto:partners@overvue.solutions"
+              href="mailto:partners@overvu.solutions"
               className=" hover:underline hover:underline-offset-4"
             >
               Mail
