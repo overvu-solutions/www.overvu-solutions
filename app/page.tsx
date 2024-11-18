@@ -1,34 +1,6 @@
 import Image from "next/image";
 
-const Avatar = ({
-  pic,
-  name,
-  link,
-}: {
-  pic: string;
-  name: string;
-  link: string;
-}) => {
-  const w = "25";
-  return (
-    <div className=" w-14 md:w-24 flex flex-col mx-4">
-      <div className="mx-auto">
-        <div className="pb-3 flex justify-center">
-          <img
-            src={pic}
-            className={`grayscale hover:grayscale-0 duration-500 rounded-full avatar_size object-cover`}
-            alt=""
-          />
-        </div>
-        <div className="flex text-center">
-          <a href={link}>
-            <h5 className="underline">{name}</h5>
-          </a>
-        </div>
-      </div>
-    </div>
-  );
-};
+import Avatar from "@/components/Avatar";
 
 const Brands = () => {
   return (
@@ -92,6 +64,18 @@ const Brands = () => {
           src="/media/wix1.svg"
         />
       </li>
+
+      <li className="h-[40px] w-[148px] sm:inline sm:h-[44px] sm:w-[178px]">
+        <Image
+          alt="Wix"
+          loading="lazy"
+          width="909"
+          height="589"
+          decoding="async"
+          className="h-full w-full"
+          src="/media/eth.png"
+        />
+      </li>      
     </ul>
   );
 };
@@ -158,9 +142,7 @@ export default function Home() {
           </div>
           <div className="justify-center">
             <div className="text-justify text-xl max-w-screen-md mb-4">
-              Our team combines academic depth with practical industry expertise. On the scientific front, we specialize in the foundations of machine learning and LLMs, with research spanning model fine-tuning, benchmarking, and advanced network protocols.
-
-
+              On the scientific front, we specialize in the foundations of machine learning and LLMs, with research spanning model fine-tuning, benchmarking, and advanced network protocols.
             </div>
             <div className="text-justify text-xl max-w-screen-md">
               On the engineering side, we build workflows and solutions based on LLMs for various use cases, with a clear understanding of their pros and cons. Additionally, we create infrastructure for data pipelines, which fuel any LLM project.
