@@ -16,9 +16,8 @@ const Avatar = ({
         <div className="pb-3 flex justify-center">
           <img
             src={pic}
-            className={`grayscale hover:grayscale-0 duration-500 rounded-full avatar`}
+            className={`grayscale hover:grayscale-0 duration-500 rounded-full avatar_size object-cover`}
             alt=""
-            style={{ width: '100%', height: 'auto', aspectRatio: '1 / 1' }}
           />
         </div>
         <div className="flex text-center">
