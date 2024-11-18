@@ -18,6 +18,7 @@ const Avatar = ({
             src={pic}
             className={`grayscale hover:grayscale-0 duration-500 rounded-full avatar`}
             alt=""
+            style={{ width: '100%', height: 'auto', aspectRatio: '1 / 1' }}
           />
         </div>
         <div className="flex text-center">
