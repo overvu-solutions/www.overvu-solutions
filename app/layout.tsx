@@ -39,7 +39,7 @@ export default function RootLayout({
       <body className={`${font.className} `}>
         <header className="header flex justify-center items-baseline w-full mt-2 w-full ">
           
-          <a className="text-2xl" href="/">
+          <a className="text-xl" href="/">
             <h1>OVERVU</h1>
           </a>
           
