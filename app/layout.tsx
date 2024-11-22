@@ -87,6 +87,10 @@ export default function RootLayout({
             >
               <X />
             </a>
+
+            <h3 className="text-lg">
+              © 2024 Overvue Solutions
+            </h3>
           </footer>
         </div>
       </body>
