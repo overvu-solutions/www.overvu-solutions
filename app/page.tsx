@@ -4,24 +4,66 @@ import Avatar from "@/components/Avatar";
 
 const Brands = () => {
   return (
-    <ul className="flex flex-wrap items-center justify-center gap-x-10 sm:gap-x-20">
-      <li className="h-auto w-[130px] sm:h-auto sm:w-[170px]">
-        <Image alt="Cambridge" loading="lazy" width="637" height="246" decoding="async" className="h-full w-full" src="/media/cambridge.jpg" />
+    <ul className="flex flex-wrap items-center justify-center gap-x-8 sm:gap-x-12 gap-y-5 sm:gap-y-6">
+      <li className="h-[44px] sm:h-[56px] aspect-[637/246]">
+        <Image
+          alt="Cambridge"
+          loading="lazy"
+          width={637}
+          height={246}
+          className="h-full w-auto object-contain"
+          src="/media/cambridge.jpg"
+        />
       </li>
-      <li className="h-auto w-[120px] sm:inline sm:h-[100px] sm:w-[150px]">
-        <Image alt="Revolut" loading="lazy" width="909" height="589" decoding="async" className="h-full w-full" src="/media/revolut.svg" />
+      <li className="h-[44px] sm:h-[56px] aspect-[909/589]">
+        <Image
+          alt="Revolut"
+          loading="lazy"
+          width={909}
+          height={589}
+          className="h-full w-auto object-contain"
+          src="/media/revolut.svg"
+        />
       </li>
-      <li className="h-[40px] w-[40px] sm:h-[50px] sm:w-[50px]">
-        <Image alt="Google" loading="lazy" width="60" height="146" decoding="async" className="h-full w-full" src="/media/google.svg" />
+      <li className="h-[44px] sm:h-[56px] aspect-[60/146]">
+        <Image
+          alt="Google"
+          loading="lazy"
+          width={60}
+          height={146}
+          className="h-full w-auto object-contain"
+          src="/media/google.svg"
+        />
       </li>
-      <li className="h-auto w-[120px] sm:h-[150px] sm:w-[150px]">
-        <Image alt="techstars" loading="lazy" width="731" height="137" decoding="async" className="h-full w-full" src="/media/techstars.png" />
+      <li className="h-[44px] sm:h-[56px] aspect-[131/137]">
+        <Image
+          alt="Techstars"
+          loading="lazy"
+          width={731}
+          height={137}
+          className="h-full w-auto object-contain"
+          src="/media/techstars.png"
+        />
       </li>
-      <li className="h-[65px] w-[65px] sm:inline sm:h-[74px] sm:w-[74px]">
-        <Image alt="Wix" loading="lazy" width="909" height="589" decoding="async" className="h-full w-full" src="/media/wix1.svg" />
+      <li className="h-[44px] sm:h-[56px] aspect-[909/589]">
+        <Image
+          alt="Wix"
+          loading="lazy"
+          width={909}
+          height={589}
+          className="h-full w-auto object-contain"
+          src="/media/wix1.svg"
+        />
       </li>
-      <li className="h-[40px] w-[148px] sm:inline sm:h-[44px] sm:w-[178px]">
-        <Image alt="ETH" loading="lazy" width="909" height="589" decoding="async" className="h-full w-full" src="/media/eth.png" />
+      <li className="h-[44px] sm:h-[56px] aspect-[909/589]">
+        <Image
+          alt="ETH"
+          loading="lazy"
+          width={909}
+          height={589}
+          className="h-full w-auto object-contain"
+          src="/media/eth.png"
+        />
       </li>
     </ul>
   );
@@ -82,21 +124,21 @@ export default function Home() {
               <Avatar pic="i/sripaad.jpg" name="Sripaad Srinivasan" link="https://www.linkedin.com/in/sripaad-srinivasan/" />
               <Avatar pic="i/valeria.jpg" name="Valeria Jannelli" link="https://www.linkedin.com/in/valeria-jannelli/" />
             </div>
-            <div className="text-left text-xl max-w-2xl mb-4 text-gray-800">
+            <div className="text-left text-xl max-w-2xl mb-8 text-gray-800">
               <Ampersand/> Founded by AI experts from Revolut, Google, Techstars, and Cambridge — our team blends deep ML research with production-grade engineering.
             </div>
-            <div className="text-left text-xl max-w-2xl text-gray-700">
+            <div className="text-left text-xl max-w-2xl mb-8 text-gray-700">
               <Ampersand/> We specialize in LLMs and automation: from fine-tuning and evaluation to infrastructure and retrieval systems.
             </div>
         </div>
 
-        <div className="w-full pt-20 sm:pt-10">
+        <div className="w-full pt-26 sm:pt-10">
           <Brands />
         </div>
 
         <div className="pt-16 text-center text-lg text-gray-600">
           Curious how a custom agent fits your workflow? {" "}
-          <a href="mailto:partners@overvu.solutions" className=" hover:underline hover:underline-offset-4">Talk</a>
+          <a href="mailto:partners@overvu.solutions" className=" hover:underline hover:underline-offset-4">Let&apos;s Talk</a>
         </div>
       </main>
     </div>
