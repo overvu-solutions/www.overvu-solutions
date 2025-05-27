@@ -55,7 +55,7 @@ export default function Home() {
 
           <div className="mb-14 w-full pl-4">
             <div className="text-left text-xl mb-5 text-gray-900  font-sans">
-              <Ampersand/> Build intelligent agents that understand your documentation, handle customer inquiries, process data insights, and support your team's daily workflows.
+              <Ampersand/> Build intelligent agents that understand your documentation, handle customer inquiries, process data insights, and support your team&apos;s daily workflows.
             </div>
             <div className="text-left text-lg pt-1 mb-2 font-mono text-black bg-gray-100 p-4 rounded-lg border">
               <code>&gt; ./agents --read-docs --respond-customers --analyze-data --assist-team</code>
