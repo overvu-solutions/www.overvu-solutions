@@ -89,7 +89,7 @@ export default function RootLayout({
             </a>
 
             <h3 className="text-lg">
-              © 2024 Overvue Solutions
+              © {new Date().getFullYear()} Overvue Solutions
             </h3>
           </footer>
         </div>
