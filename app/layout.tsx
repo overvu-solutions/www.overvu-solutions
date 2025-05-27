@@ -1,32 +1,64 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Literata } from "next/font/google";
-import { Mail, AppWindowMac, Globe } from "lucide-react";
+import { Literata } from "next/font/google";
+import { Mail } from "lucide-react";
 
 import LinkedIn from "@/components/svg/LinkedIn";
 import X from "@/components/svg/X";
 
 import "./globals.css";
-import Image from "next/image";
-import Link from "next/link";
+// import Image from "next/image";
+// import Link from "next/link";
 
 const font = Literata({ subsets: ["latin"] });
 
+
 export const metadata: Metadata = {
-  title: "Overvu | Generative AI & Large Language Model (LLM) Consulting",
+  title: "Overvu | Custom LLM Agents & AI Consulting for Business Impact",
   description:
-    "Unlock the full potential of Generative AI and Large Language Models with Overvu Solutions. Our tailored consulting services help businesses deploy, optimize, and integrate AI models for transformative business outcomes.",
+    "Overvu is a boutique AI consultancy building production-ready LLM agents tailored to your workflows. From copilots to automation, we help enterprises deploy AI systems that deliver real business outcomes.",
   keywords: [
-    "Generative AI consulting",
-    "LLM consulting",
-    "AI model optimization",
-    "custom AI solutions",
-    "AI business transformation",
-    "GPT consulting",
-    "NLP solutions",
-    "AI-powered automation",
-    "enterprise AI",
-    "machine learning consulting",
+    "custom LLM agents",
+    "enterprise AI consulting",
+    "AI copilots",
+    "Generative AI for business",
+    "AI agent development",
+    "GPT-4 consulting",
+    "AI workflow automation",
+    "LLM deployment",
+    "production-ready AI systems",
+    "AI integration services",
   ],
+  metadataBase: new URL("https://overvu.solutions"),
+  openGraph: {
+    title: "Overvu | Custom LLM Agents & AI Consulting for Business Impact",
+    description:
+      "We build tailored LLM agents for real-world use cases — copilots, automation, and more. Trusted by technical founders and innovation teams.",
+    url: "https://overvu.solutions",
+    siteName: "Overvu",
+    images: [
+      {
+        url: "https://overvu.solutions/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Overvu AI Agents Banner",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Overvu | Custom LLM Agents for Enterprise",
+    description:
+      "Boutique AI agency designing LLM agents that deliver impact — copilots, automation, and enterprise AI workflows.",
+    creator: "@Overvu_",
+    images: ["https://overvu.solutions/og-image.png"],
+  },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({
