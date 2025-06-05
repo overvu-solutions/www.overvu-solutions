@@ -107,7 +107,10 @@ const HeroPitch = () => {
 
 const BlockHeader = ({ title }: { title: string }) => {
   return (
-    <h3 className="text-left text-3xl mb-5 uppercase font-semibold " style={{ letterSpacing: "0.08em" }}>
+    <h3
+      className="text-left text-3xl mb-5 uppercase font-semibold "
+      style={{ letterSpacing: "0.08em" }}
+    >
       <Ampersand /> {title}
     </h3>
   );
@@ -118,7 +121,7 @@ const Team = () => {
     <div className="w-full mx-8">
       <BlockHeader title="team" />
 
-      <div className="flex flex-row justify-start flex-wrap gap-2 md:gap-2 mb-10">
+      <div className="flex flex-row justify-start flex-wrap gap-2 md:gap-2 py-4">
         <Avatar
           pic="i/pavel.jpg"
           name="Pavel Grachev-Mousset"
@@ -145,35 +148,51 @@ const Team = () => {
           link="https://www.linkedin.com/in/valeria-jannelli/"
         />
       </div>
-      
+
       {/* 1) Founded‐By / Team Intro */}
 
       <div className="text-xs text-gray-500 font-mono mb-1">⸺ FOUNDERS</div>
       <div className="text-left text-md max-w-2xl mb-8  text-black">
-          Founded by Pavel, Bohdan, and Yaniv — former senior contributors to Revolut, Google, Techstars, and Cambridge.
+        Founded by Pavel, Bohdan, and Yaniv — former senior contributors to
+        Revolut, Google, Techstars, and Cambridge.
       </div>
 
       {/* 2) LLM & Automation */}
       <div className="text-xs text-gray-500 font-mono  mb-1">⸺ EXPERIENCE</div>
       <div className=" text-left text-md max-w-2xl mb-8 text-black">
-        Together, we’ve built and deployed LLM systems across fintech, developer tools, fashion, and web3 — from infra to interface.
+        Together, we’ve built and deployed LLM systems across fintech, developer
+        tools, fashion, and web3 — from infra to interface.
       </div>
 
       {/* 3) New Web3 / Finance Line */}
       <div className="text-xs text-gray-500 font-mono  mb-1">⸺ PERSPECTIVE</div>
       <div className="text-left text-md max-w-2xl mb-8  text-black">
-        Our backgrounds span financial infrastructure, applied research, and intelligent systems — with a focus on deployment, not speculation
+        Our backgrounds span financial infrastructure, applied research, and
+        intelligent systems — with a focus on deployment, not speculation
       </div>
     </div>
   );
 };
 
-const CaseItem = ({ title, body }: { title: string; body: string }) => {
+const CaseItem = ({
+  title,
+  subtitle,
+  body,
+}: {
+  title: string;
+  subtitle?: string;
+  body: string;
+}) => {
   return (
-    <div className="mb-8">
-      <h5 className="text-md mb-4">{title}</h5>
-      <div className="text-gray-600 text-left text-md">{body}</div>
-    </div>
+    <dl className="space-y-12">
+      <div className="mb-12">
+        <dt className="text-md font-medium tracking-wide uppercase mb-1">
+          {title}
+        </dt>
+        <dd className="text-xs text-zinc-500 font-mono mb-3">{subtitle}</dd>
+        <p className="text-sm leading-relaxed text-zinc-700 max-w-xl">{body}</p>
+      </div>
+    </dl>
   );
 };
 
@@ -181,36 +200,23 @@ const Cases = () => {
   return (
     <div className="w-full mx-8">
       <BlockHeader title="cases" />
-      <div>
+      <div className="py-4">
         <CaseItem
-          title="1. REDRESS - FASHION  CO-PILOT"
-          body="Redress is our AI-powered fashion co-pilot that helps users 'complete the look' by sourcing reference images that perfectly reflect their style and aesthetic. Without any model fine-tuning, Redress leverages a curated library of visuals and smart similarity matching to suggest complementary pieces—whether it's pairing a statement jacket with the ideal trousers or finding the perfect shoes to tie an outfit together. The result is a seamless, style-driven experience that feels like having a personal stylist in your pocket."
+          title="REDRESS - FASHION  CO-PILOT"
+          subtitle="AI stylist · B2B2C"
+          body="A reference-based AI stylist that completes looks using curated visuals and smart similarity — no model fine-tuning required. Built for plug-and-play in multi-brand environments."
         />
 
         <CaseItem
-          title="2. CBDC Proposal"
-          body="We participated in a competitive tender for a central bank’s digital
-            currency (CBDC) initiative. Proposal landed into the sandbox."
+          title="CBDC Proposal"
+          subtitle="Digital currency · Central Bank Sandbox"
+          body="We participated in a competitive tender for a central bank’s digital currency initiative. The proposal advanced into the regulatory sandbox."
         />
 
-        {/* 3 */}
         <CaseItem
-          title="3. 0DOCS - Auto Gen documentation dev tool"
-          body="Our suite of developer tools is continuously evolving. The latest
-          update introduces a unified SDK that streamlines API integrations,
-          enhanced debugging utilities for faster issue resolution, and
-          out-of-the-box templates that accelerate time to market. Whether
-          you’re building smart contracts, integrating DLT nodes, or deploying
-          AI-driven services, these tools simplify complex workflows and empower
-          engineering teams to ship with confidence."
-        />
-
-        {/* ───────────────────────────────────────────────────────────────────── */}
-        {/* 4 */}
-        {/* ───────────────────────────────────────────────────────────────────── */}
-        <CaseItem
-          title="4. **nda** - programable money asset"
-          body="Help to design new class of investment asset. Without revealing details it jsut cool and we are proud of it."
+          title="NDA Project — Programmable Money Asset"
+          subtitle="Fintech · Asset Design · Confidential"
+          body="We contributed to the design of a novel investment instrument in the programmable money space. Details are under NDA — but it's one of the projects we’re most proud of."
         />
       </div>
     </div>
@@ -220,11 +226,11 @@ const Cases = () => {
 export default function Home() {
   return (
     <div className="grid items-center justify-items-center min-h-screen pb-20 px-4 sm:p-1">
-      <div className="flex w-full justify-center my-[5rem]">
+      <div className="flex w-full justify-center my-[5rem] ">
         <HeroImage />
       </div>
 
-      <main className="flex flex-col gap-[6rem] row-start-2 items-center sm:items-start max-w-screen-md">
+      <main className="flex flex-col gap-main  row-start-2 items-center sm:items-start max-w-screen-md">
         {/* Pitch */}
         <div className="w-full">
           <HeroPitch />
@@ -244,14 +250,13 @@ export default function Home() {
           <Brands />
         </div>
 
-        <div className="pt-16 text-center text-lg text-gray-600">
-          Curious how a custom agent fits your workflow?{" "}
-          <a
-            href="mailto:partners@overvu.solutions"
-            className=" hover:underline hover:underline-offset-4"
-          >
-            Let&apos;s Talk
-          </a>
+        <div className="pt-16 text-center w-full text-lg text-gray-600">
+          <p>
+            Curious?{"   "}
+            <a href="mailto:partners@overvu.solutions" className=" underline ">
+              Let&apos;s Talk
+            </a>
+          </p>
         </div>
       </main>
     </div>

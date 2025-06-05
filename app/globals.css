@@ -28,6 +28,9 @@ body {
   margin: 0;
 }
 
+.gap-main {
+  gap: 7rem;
+}
 
 .rotate {
   transition: transform 0.3s ease;
