@@ -5,14 +5,10 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-literata: 'Literata', Georgia, 'Times New Roman', serif;
+  --font-libre-baskerville: 'Libre Baskerville', Georgia, 'Times New Roman', serif;
+  --font-cormorant-garamond: 'Space Grotesk', sans-serif;
 }
-
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-} */
 
 
 @layer utilities {
@@ -21,10 +17,25 @@
   }
 }
 
-/* @font-face {
-  font-family: "bradford";
-  src: url("fonts/BradfordLLWeb-Regular.woff") format('woff');
-} */
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-libre-baskerville);
+  font-display: swap; /* Ensures smooth font swapping */
+
+  font-size: 1.1em;
+  line-height: 1.4em;
+  margin: 0;
+}
+
+
+.rotate {
+  transition: transform 0.3s ease;
+}
+
+.rotate:hover {
+  transform: rotate(90deg);
+}
 
 * {
   box-sizing: border-box;
@@ -32,24 +43,6 @@
 
 a {
   color: inherit;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  /* font-family: Arial, Helvetica, sans-serif; */
-}
-
-
-body {
-  /* font-family: "bradford"; */
-  font-size: 1.1em;
-  line-height: 1.4em;
-  margin: 0;
-  /* width: 76vw; */
-  /* max-width: 930px; */
-  /* margin: auto; */
-  /* text-align: center; */
 }
 
 #footer ul {
@@ -63,8 +56,6 @@ body {
   display: inline-block;
   margin: 12px 24px;
 }
-
-
 
 .big {
   font-size: 1.25em;
@@ -101,10 +92,7 @@ body {
   opacity: 50%;
 }
 
-.header {
-  margin-bottom: 60px;
-  margin-top: 80px;
-}
+
 
 
 .avatar_size {
@@ -121,59 +109,3 @@ body {
   padding: 0 24px 24px 24px;
   text-align: center;
 }
-
-/* @media (max-width: 1200px) { 
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  align-items: center;
-  justify-content: center;
-}
-
-.section {
-  height: 26%;
-  width: 26%;
-  position: relative;
-  text-align: center;
-}
-} */
-
-/* @media (max-width: 900px) { 
-body {
-  font-size: 1em;
-}
-
-.container img {
-  width: 180px;
-}
-
-.spacer {
-  height: 48px;
-}
-
-#logo img {
-  width: 70%;
-}
-
-.logo-small img {
-  width: 70%;
-}
-
-.container {
-  flex-direction: column;
-}
-
-.section {
-  width: 60%;
-  height: 60%;
-}
-
-ul li {
-  display: block;
-}
-
-.text-block {
-  width: 100%;
-}
-} */

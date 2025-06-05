@@ -8,7 +8,7 @@ const Avatar = ({
   link: string;
 }) => {
   return (
-    <div className=" w-14 md:w-24 flex flex-col mx-4">
+    <div className=" w-14 md:w-24 flex flex-col mx-4 hover:underline">
       <div className="mx-auto">
         <div className="pb-3 flex justify-center">
           <img
@@ -17,9 +17,9 @@ const Avatar = ({
             alt=""
           />
         </div>
-        <div className="flex text-center">
-          <a href={link}>
-            <h5 className="underline">{name}</h5>
+        <div className="flex text-center text-xs font-light tracking-wider uppercase">
+          <a href={link} className="font-mono">
+            <h5 className="">{name}</h5>
           </a>
         </div>
       </div>
