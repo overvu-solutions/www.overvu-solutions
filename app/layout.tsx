@@ -81,7 +81,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${font.className}`}>
-        <header className={`flex justify-center items-baseline w-full my-[3.25rem] md:my-[4rem] text-light`}>
+        <header className={`flex justify-center items-baseline w-full my-[3.25rem] md:my-[3.4rem] text-light`}>
           
           <a className="text-xl" href="/">
             <h1>OVERVU</h1>
