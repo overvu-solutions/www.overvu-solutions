@@ -108,7 +108,7 @@ const HeroPitch = () => {
 const BlockHeader = ({ title }: { title: string }) => {
   return (
     <h3
-      className="text-left text-3xl mb-5 uppercase font-semibold "
+      className="text-left text-3xl mb-4 uppercase font-semibold "
       style={{ letterSpacing: "0.08em" }}
     >
       <Ampersand /> {title}
@@ -121,7 +121,7 @@ const Team = () => {
     <div className="w-full mx-8">
       <BlockHeader title="team" />
 
-      <div className="flex flex-row justify-start flex-wrap gap-2 md:gap-2 py-4">
+      <div className="flex flex-row justify-start flex-wrap gap-2 md:gap-2 my-10">
         <Avatar
           pic="i/pavel.jpg"
           name="Pavel Grachev-Mousset"
@@ -151,24 +151,30 @@ const Team = () => {
 
       {/* 1) Founded‐By / Team Intro */}
 
-      <div className="text-xs text-gray-500 font-mono mb-1">⸺ FOUNDERS</div>
-      <div className="text-left text-md max-w-2xl mb-8  text-black">
-        Founded by Pavel, Bohdan, and Yaniv — former senior contributors to
-        Revolut, Google, Techstars, and Cambridge.
-      </div>
+      <div className="">
+        <div className="text-xs text-gray-500 font-mono mb-1">⸺ FOUNDERS</div>
+        <div className="text-left text-md max-w-2xl mb-8  text-black">
+          Founded by Pavel, Bohdan, and Yaniv — former senior contributors to
+          Revolut, Google, Techstars, and Cambridge.
+        </div>
 
-      {/* 2) LLM & Automation */}
-      <div className="text-xs text-gray-500 font-mono  mb-1">⸺ EXPERIENCE</div>
-      <div className=" text-left text-md max-w-2xl mb-8 text-black">
-        Together, we’ve built and deployed LLM systems across fintech, developer
-        tools, fashion, and web3 — from infra to interface.
-      </div>
+        {/* 2) LLM & Automation */}
+        <div className="text-xs text-gray-500 font-mono  mb-1">
+          ⸺ EXPERIENCE
+        </div>
+        <div className=" text-left text-md max-w-2xl mb-8 text-black">
+          Together, we’ve built and deployed LLM systems across fintech,
+          developer tools, fashion, and web3 — from infra to interface.
+        </div>
 
-      {/* 3) New Web3 / Finance Line */}
-      <div className="text-xs text-gray-500 font-mono  mb-1">⸺ PERSPECTIVE</div>
-      <div className="text-left text-md max-w-2xl mb-8  text-black">
-        Our backgrounds span financial infrastructure, applied research, and
-        intelligent systems — with a focus on deployment, not speculation
+        {/* 3) New Web3 / Finance Line */}
+        <div className="text-xs text-gray-500 font-mono  mb-1">
+          ⸺ PERSPECTIVE
+        </div>
+        <div className="text-left text-md max-w-2xl mb-8  text-black">
+          Our backgrounds span financial infrastructure, applied research, and
+          intelligent systems — with a focus on deployment, not speculation
+        </div>
       </div>
     </div>
   );
