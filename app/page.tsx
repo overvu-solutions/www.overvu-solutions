@@ -219,11 +219,7 @@ const Cases = () => {
           body="We participated in a competitive tender for a central bank's digital currency initiative. The proposal advanced into the regulatory sandbox."
         />
 
-        <CaseItem
-          title="NDA Project — Hydro-Capacity-Based Power Utilisation"
-          subtitle="Energy · Feasibility Study · Confidential"
-          body="We conducted a hydro-capacity-based power utilisation feasibility study. Details are under NDA — but it's one of the projects we're most proud of."
-        />
+      
 
         <CaseItem
           title="NDA Project — Programmable Money Asset"
