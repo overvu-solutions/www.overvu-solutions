@@ -209,7 +209,7 @@ const Cases = () => {
       <div className="py-4">
         <CaseItem
           title="REDRESS - FASHION  CO-PILOT"
-          subtitle="AI stylist · B2B2C"
+          subtitle="AI · AI stylist · B2B2C"
           body="A reference-based AI stylist that completes looks using curated visuals and smart similarity — no model fine-tuning required. Built for plug-and-play in multi-brand environments."
         />
 
@@ -219,19 +219,17 @@ const Cases = () => {
           body="We participated in a competitive tender for a central bank's digital currency initiative. The proposal advanced into the regulatory sandbox."
         />
 
-      
+        <CaseItem
+           title="NDA Project — Hydropower Optimization"
+           subtitle="Energy systems · Infrastructure modeling · Miners"
+           body="We modeled demand-response strategies for variable hydro power, balancing system constraints and revenue potential. Project under NDA."
+         />
 
         <CaseItem
           title="NDA Project — Programmable Money Asset"
-          subtitle="Fintech · Asset Design · Confidential"
-          body="We contributed to the design of a novel investment instrument in the programmable money space. Details are under NDA — but it's one of the projects we're most proud of."
+          subtitle="Research · Fintech · Asset Design"
+          body="We contributed to the design of a novel investment instrument in the programmable money space. Details are under NDA. Intersection of investement asset, DLT, programable money."
         />
-
-        <CaseItem
-           title="NDA Project — Hydropower Optimization"
-           subtitle="Energy systems · Infrastructure modeling · Confidential"
-           body="We modeled demand-response strategies for variable hydro power, balancing system constraints and revenue potential. Project under NDA."
-         />
       </div>
     </div>
   );

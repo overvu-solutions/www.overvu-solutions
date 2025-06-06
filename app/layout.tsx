@@ -127,7 +127,7 @@ export default function RootLayout({
             </a>
 
             <h3 className="text-lg">
-              © {new Date().getFullYear()} Overvue Solutions
+              © {new Date().getFullYear()} Overvue Network. All rights reserved.
             </h3>
           </footer>
         </div>
