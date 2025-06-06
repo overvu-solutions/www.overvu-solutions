@@ -216,13 +216,19 @@ const Cases = () => {
         <CaseItem
           title="CBDC Proposal"
           subtitle="Digital currency · Central Bank Sandbox"
-          body="We participated in a competitive tender for a central bank’s digital currency initiative. The proposal advanced into the regulatory sandbox."
+          body="We participated in a competitive tender for a central bank's digital currency initiative. The proposal advanced into the regulatory sandbox."
+        />
+
+        <CaseItem
+          title="NDA Project — Hydro-Capacity-Based Power Utilisation"
+          subtitle="Energy · Feasibility Study · Confidential"
+          body="We conducted a hydro-capacity-based power utilisation feasibility study. Details are under NDA — but it's one of the projects we're most proud of."
         />
 
         <CaseItem
           title="NDA Project — Programmable Money Asset"
           subtitle="Fintech · Asset Design · Confidential"
-          body="We contributed to the design of a novel investment instrument in the programmable money space. Details are under NDA — but it's one of the projects we’re most proud of."
+          body="We contributed to the design of a novel investment instrument in the programmable money space. Details are under NDA — but it's one of the projects we're most proud of."
         />
       </div>
     </div>
