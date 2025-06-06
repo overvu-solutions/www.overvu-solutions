@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Literata } from "next/font/google";
+import { Cormorant_Garamond, Libre_Baskerville } from "next/font/google";
 import { Mail } from "lucide-react";
 
 import LinkedIn from "@/components/svg/LinkedIn";
@@ -9,8 +9,20 @@ import "./globals.css";
 // import Image from "next/image";
 // import Link from "next/link";
 
-const font = Literata({ subsets: ["latin"] });
+const fontV2 = Cormorant_Garamond({ 
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  display: 'swap', // or 'fallback' for smoother transition
+  variable: '--font-cormorant-garamond',
+});
 
+
+const font = Libre_Baskerville({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+  display: 'swap', // or 'fallback' for smoother transition
+  variable: '--font-libre-baskerville',
+});
 
 export const metadata: Metadata = {
   title: "Overvu | Custom LLM Agents & AI Consulting for Business Impact",
@@ -68,8 +80,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${font.className} `}>
-        <header className="header flex justify-center items-baseline w-full mt-2 w-full ">
+      <body className={`${font.className}`}>
+        <header className={`flex justify-center items-baseline w-full my-[3.25rem] md:my-[3.4rem] text-light`}>
           
           <a className="text-xl" href="/">
             <h1>OVERVU</h1>
