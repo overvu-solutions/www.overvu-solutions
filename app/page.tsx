@@ -230,6 +230,12 @@ const Cases = () => {
           subtitle="Fintech · Asset Design · Confidential"
           body="We contributed to the design of a novel investment instrument in the programmable money space. Details are under NDA — but it's one of the projects we're most proud of."
         />
+
+        <CaseItem
+           title="NDA Project — Hydropower Optimization"
+           subtitle="Energy systems · Infrastructure modeling · Confidential"
+           body="We modeled demand-response strategies for variable hydro power, balancing system constraints and revenue potential. Project under NDA."
+         />
       </div>
     </div>
   );
