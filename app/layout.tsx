@@ -6,8 +6,6 @@ import LinkedIn from "@/components/svg/LinkedIn";
 import X from "@/components/svg/X";
 
 import "./globals.css";
-// import Image from "next/image";
-// import Link from "next/link";
 
 const fontV2 = Cormorant_Garamond({ 
   subsets: ["latin"],
@@ -15,7 +13,6 @@ const fontV2 = Cormorant_Garamond({
   display: 'swap', // or 'fallback' for smoother transition
   variable: '--font-cormorant-garamond',
 });
-
 
 const font = Libre_Baskerville({
   weight: ["400", "700"],
@@ -25,34 +22,34 @@ const font = Libre_Baskerville({
 });
 
 export const metadata: Metadata = {
-  title: "Overvu | Custom LLM Agents & AI Consulting for Business Impact",
+  title: "Prefix Tree | Custom LLM Agents & AI Systems",
   description:
-    "Overvu is a boutique AI consultancy building production-ready LLM agents tailored to your workflows. From copilots to automation, we help enterprises deploy AI systems that deliver real business outcomes.",
+    "Prefix Tree is a boutique AI studio designing and deploying LLM agents tailored to real-world workflows — from automation to copilots and internal tools.",
   keywords: [
+    "Prefix Tree",
     "custom LLM agents",
-    "enterprise AI consulting",
+    "LLM integration",
+    "enterprise AI systems",
     "AI copilots",
-    "Generative AI for business",
+    "workflow automation",
+    "LLM consulting",
     "AI agent development",
-    "GPT-4 consulting",
-    "AI workflow automation",
-    "LLM deployment",
-    "production-ready AI systems",
-    "AI integration services",
+    "production-grade AI",
+    "AI infrastructure design",
   ],
-  metadataBase: new URL("https://overvu.solutions"),
+  metadataBase: new URL("https://prefixtree.xyz"),
   openGraph: {
-    title: "Overvu | Custom LLM Agents & AI Consulting for Business Impact",
+    title: "Prefix Tree | Custom LLM Agents & AI Systems",
     description:
-      "We build tailored LLM agents for real-world use cases — copilots, automation, and more. Trusted by technical founders and innovation teams.",
-    url: "https://overvu.solutions",
-    siteName: "Overvu",
+      "We design and deploy structured AI agents for real-world use cases — copilots, automations, and internal tools.",
+    url: "https://prefixtree.xyz",
+    siteName: "Prefix Tree",
     images: [
       {
-        url: "https://overvu.solutions/og-image.png",
+        url: "https://prefixtree.xyz/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Overvu AI Agents Banner",
+        alt: "Prefix Tree AI Studio Banner",
       },
     ],
     locale: "en_US",
@@ -60,11 +57,11 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Overvu | Custom LLM Agents for Enterprise",
+    title: "Prefix Tree | Custom AI Agents for Real Work",
     description:
-      "Boutique AI agency designing LLM agents that deliver impact — copilots, automation, and enterprise AI workflows.",
-    creator: "@Overvu_",
-    images: ["https://overvu.solutions/og-image.png"],
+      "LLM systems that go beyond chat — copilots, automations, and AI-native workflows, built for deployment.",
+    creator: "@Overvu_", // update if needed
+    images: ["https://prefixtree.xyz/og-image.png"],
   },
   icons: {
     icon: "/favicon.ico",
@@ -72,7 +69,7 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
   },
 };
-
+const emial = "partners@overvu.solutions"
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -84,12 +81,12 @@ export default function RootLayout({
         <header className={`flex justify-center items-baseline w-full my-[3.25rem] md:my-[3.4rem] text-light`}>
           
           <a className="text-xl" href="/">
-            <h1>OVERVU</h1>
+            <h1>PRFX</h1>
           </a>
           
           <nav className="ml-20 flex justify-start  gap-7 text-xl">
             <a
-              href="mailto:partners@overvu.solutions"
+              href={`mailto:${emial}`}
               className=" hover:underline hover:underline-offset-4"
             >
               Mail
@@ -99,10 +96,10 @@ export default function RootLayout({
 
         <div className="md:max-w-screen-lg mx-auto">
           <div className="max-w-full	relative	mx-auto">{children}</div>
-          <footer className="pt-52 pb-12 row-start-3 flex gap-10 flex-wrap items-center justify-center">
+          <footer className="mt-48 pb-12 row-start-3 flex gap-10 flex-wrap items-center justify-center">
             <a
               className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-              href="mailto:partners@overvu.solutions"
+              href={`mailto:${emial}`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -127,7 +124,7 @@ export default function RootLayout({
             </a>
 
             <h3 className="text-lg">
-              © {new Date().getFullYear()} Overvue Network. All rights reserved.
+              © {new Date().getFullYear()} Prefix Tree Ventures
             </h3>
           </footer>
         </div>
