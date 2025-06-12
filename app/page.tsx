@@ -98,8 +98,7 @@ const HeroPitch = () => {
   return (
     <div className="text-center  mx-8 text-gray-900  ">
       <p className="mb-14 text-3xl sans-serif">
-        We are a venture studio and boutique AI agency based in London &
-        Luxembourg. <em>Built to ship, not to demo.</em>
+           <em>Built to ship, not to demo.</em>
       </p>
     </div>
   );
