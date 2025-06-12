@@ -236,7 +236,7 @@ const Cases = () => {
 
 export default function Home() {
   return (
-    <div className="grid items-center gap-[4rem] justify-items-center min-h-screen pb-20 px-4 sm:p-1">
+    <div className="grid items-center gap-[4rem] justify-items-center min-h-screen pb-20 sm:p-1">
       <div className="flex w-full justify-center my-[4rem] ">
         <HeroImage />
       </div>
