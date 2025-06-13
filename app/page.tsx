@@ -236,35 +236,36 @@ const Cases = () => {
 
 export default function Home() {
   return (
-    <div className="grid items-center gap-[4rem] justify-items-center min-h-screen pb-20 sm:p-1">
-      <div className="flex w-full justify-center my-[4rem] ">
+    /* Prevent any accidental x-overflow as a final safety-net */
+    <div className="min-h-screen overflow-x-hidden pb-20">
+
+      {/* Hero logo row */}
+      <div className="flex justify-center my-16">
         <HeroImage />
       </div>
 
-      <main className="flex flex-col gap-main  row-start-2 items-center sm:items-start max-w-screen-md">
+      {/* MAIN CONTENT
+         `container` centres and clamps the width, while `px-*`
+         provides the horizontal breathing-space that used to be
+         handled (incorrectly) by `mx-8`.                     */}
+      <main className="container mx-auto flex flex-col gap-16 px-4 sm:px-8">
+
         {/* Pitch */}
-        <div className="w-full">
-          <HeroPitch />
-        </div>
+        <HeroPitch />
 
-        {/* TEAM */}
-        <div className="w-full">
-          <Team />
-        </div>
+        {/* Sections */}
+        <Team />
+        <Cases />
+        <Brands />
 
-        <div className="w-full">
-          <Cases />
-        </div>
-
-        {/* CASES */}
-        <div className="w-full">
-          <Brands />
-        </div>
-
-        <div className="pt-16 text-center w-full text-lg text-gray-600">
+        {/* CTA */}
+        <div className="pt-16 text-center text-lg text-gray-600">
           <p>
-            Curious?{"   "}
-            <a href="mailto:partners@overvu.solutions" className=" underline ">
+            Curious?{" "}
+            <a
+              href="mailto:partners@overvu.solutions"
+              className="underline"
+            >
               Let&apos;s Talk
             </a>
           </p>
