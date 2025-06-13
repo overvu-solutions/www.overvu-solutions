@@ -117,7 +117,7 @@ const BlockHeader = ({ title }: { title: string }) => {
 
 const Team = () => {
   return (
-    <div className="w-full mx-8">
+    <div className="w-full mx-1 md:mx-8">
       <BlockHeader title="team" />
 
       <div className="flex flex-row justify-start flex-wrap gap-2 md:gap-2 my-10">
@@ -203,7 +203,7 @@ const CaseItem = ({
 
 const Cases = () => {
   return (
-    <div className="w-full mx-8">
+    <div className="w-full mx-1 md:mx-8">
       <BlockHeader title="cases" />
       <div className="py-4">
         <CaseItem
