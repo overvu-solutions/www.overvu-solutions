@@ -203,7 +203,7 @@ const CaseItem = ({
 
 const Cases = () => {
   return (
-    <div className="w-full mx-8">
+    <div className="w-full mx-1 md:mx-8">
       <BlockHeader title="cases" />
       <div className="py-4">
         <CaseItem
