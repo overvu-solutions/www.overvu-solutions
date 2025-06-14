@@ -115,6 +115,38 @@ const BlockHeader = ({ title }: { title: string }) => {
   );
 };
 
+const Thesis = () => (
+  <section className="w-full mx-1 md:mx-8 py-8">
+    {/* Section header */}
+    <BlockHeader title="thesis" />
+
+    {/* Core belief as sub-header */}
+    <h3
+      className="text-left text-3xl mb-4 uppercase font-semibold"
+      style={{ letterSpacing: "0.08em" }}
+    >
+      Core belief
+    </h3>
+    <p className="text-left text-md max-w-2xl mb-8 text-black">
+      AI-native ventures in established niches will outperform traditional businesses.
+    </p>
+
+    {/* Reasons list */}
+    <ul className="list-disc list-inside space-y-4 text-sm leading-relaxed text-zinc-700 max-w-xl">
+      <li>
+        <strong>Incumbents lag:</strong> Legacy systems and siloed teams slow innovation.
+      </li>
+      <li>
+        <strong>AI-first design:</strong> Processes architected around agents and automation from day one.
+      </li>
+      <li>
+        <strong>Superior execution:</strong> Faster iteration, lean operations, and scalable advantages.
+      </li>
+    </ul>
+  </section>
+);
+
+
 const Team = () => {
   return (
     <div className="w-full mx-1 md:mx-8">
@@ -254,6 +286,7 @@ export default function Home() {
         <HeroPitch />
 
         {/* Sections */}
+        <Thesis />
         <Team />
         <Cases />
         <Brands />
