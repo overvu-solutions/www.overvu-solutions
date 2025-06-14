@@ -117,34 +117,34 @@ const BlockHeader = ({ title }: { title: string }) => {
 
 const Thesis = () => (
   <section className="w-full mx-1 md:mx-8 py-8">
-    {/* Section header */}
+    {/* Main section header */}
     <BlockHeader title="thesis" />
 
-    {/* Core belief as sub-header */}
+    {/* Core belief */}
     <h3
       className="text-left text-3xl mb-4 uppercase font-semibold"
       style={{ letterSpacing: "0.08em" }}
     >
-      Core belief
+      AI-native ventures outperform traditional incumbents
     </h3>
-    <p className="text-left text-md max-w-2xl mb-8 text-black">
-      AI-native ventures in established niches will outperform traditional businesses.
-    </p>
 
-    {/* Reasons list */}
-    <ul className="list-disc list-inside space-y-4 text-sm leading-relaxed text-zinc-700 max-w-xl">
-      <li>
-        <strong>Incumbents lag:</strong> Legacy systems and siloed teams slow innovation.
-      </li>
-      <li>
-        <strong>AI-first design:</strong> Processes architected around agents and automation from day one.
-      </li>
-      <li>
-        <strong>Superior execution:</strong> Faster iteration, lean operations, and scalable advantages.
-      </li>
+    {/* WHY */}
+    <h4 className="font-semibold mb-2">Why</h4>
+    <ul className="list-disc list-inside space-y-2 text-sm leading-relaxed text-zinc-700 max-w-xl mb-6">
+      <li>AI-first processes are inherently more efficient.</li>
+      <li>Legacy organisations lag on innovation and speed.</li>
+    </ul>
+
+    {/* WE */}
+    <h4 className="font-semibold mb-2">We</h4>
+    <ul className="list-disc list-inside space-y-2 text-sm leading-relaxed text-zinc-700 max-w-xl">
+      <li>Help established players innovate with AI-native architecture.</li>
+      <li>Operate in true startup mode — rapid cycles, shipped code.</li>
     </ul>
   </section>
 );
+
+
 
 
 const Team = () => {
