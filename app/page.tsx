@@ -122,10 +122,9 @@ const Thesis = () => (
 
     {/* Core belief */}
     <h3
-      className="text-left text-3xl mb-4 uppercase font-semibold"
-      style={{ letterSpacing: "0.08em" }}
+      className="text-left text-xl mb-4 uppercase font-semibold"
     >
-      AI-native ventures outperform traditional incumbents
+      AI-native ventures outperform traditional players
     </h3>
 
     {/* WHY */}
