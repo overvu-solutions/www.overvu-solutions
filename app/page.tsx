@@ -122,7 +122,7 @@ const Thesis = () => (
 
     {/* Core belief */}
     <h3
-      className="text-left text-xl mb-4 uppercase font-semibold"
+      className="text-left mb-4 uppercase font-semibold"
     >
       AI-native ventures outperform traditional players
     </h3>
