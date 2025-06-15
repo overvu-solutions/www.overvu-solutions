@@ -48,8 +48,7 @@ export default function RootLayout({
             <h1>PRFX</h1>
           </a>
 
-          {/* smaller left-margin on phones so the whole
-              chunk stays < 100 vw                       */}
+          {/* smaller left-margin on phones so the whole chunk stays < 100 vw */}
           <nav className="ml-6 sm:ml-20 flex gap-7 text-xl">
             <a
               href={`mailto:${email}`}
@@ -61,9 +60,7 @@ export default function RootLayout({
         </header>
 
         {/* ---------- MAIN CONTENT ---------- */}
-        {/* `container` keeps everything centred and clamped.
-            `px-*` gives side breathing-room on tiny screens.    */}
-        <main className="container mx-auto px-4 sm:px-8">
+        <main className="container w-fill md:max-w-4xl mx-auto px-4 sm:px-8">
           {children}
         </main>
 

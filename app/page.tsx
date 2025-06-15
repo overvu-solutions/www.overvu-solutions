@@ -2,6 +2,8 @@ import React from "react";
 import Image from "next/image";
 import Avatar from "@/components/Avatar";
 
+import Cases from "@/components/Cases";
+
 const Brands = () => {
   return (
     <ul className="flex flex-wrap items-center justify-center gap-x-8 sm:gap-x-12 gap-y-5 sm:gap-y-6">
@@ -71,9 +73,7 @@ const Brands = () => {
 
 const Ampersand = () => {
   return (
-    <span className="mr-4 rotate" style={{ fontSize: "0.856em" }}>
-      §
-    </span>
+    <span className="mr-4 rotate" style={{ fontSize: "0.856em" }}>§</span>
   );
 };
 
@@ -86,7 +86,6 @@ const HeroImage = () => {
         width="909"
         height="589"
         decoding="async"
-        data-nImage="1"
         className="h-auto w-[10.856rem] md:w-[13.856rem] object-contain"
         src="/hero.png"
       />
@@ -162,7 +161,7 @@ const Team = () => {
           ⸺ EXPERIENCE
         </div>
         <div className=" text-left text-md max-w-2xl mb-8 text-black">
-          Together, we’ve built and deployed LLM systems across fintech,
+          Together, we've built and deployed LLM systems across fintech,
           developer tools, fashion, and web3 — from infra to interface.
         </div>
 
@@ -179,60 +178,6 @@ const Team = () => {
   );
 };
 
-const CaseItem = ({
-  title,
-  subtitle,
-  body,
-}: {
-  title: string;
-  subtitle?: string;
-  body: string;
-}) => {
-  return (
-    <dl className="space-y-12">
-      <div className="mb-12">
-        <dt className="text-md font-medium tracking-wide uppercase mb-1">
-          {title}
-        </dt>
-        <dd className="text-xs text-zinc-500 font-mono mb-3">{subtitle}</dd>
-        <p className="text-sm leading-relaxed text-zinc-700 max-w-xl">{body}</p>
-      </div>
-    </dl>
-  );
-};
-
-const Cases = () => {
-  return (
-    <div className="w-full mx-1 md:mx-8">
-      <BlockHeader title="cases" />
-      <div className="py-4">
-        <CaseItem
-          title="REDRESS - FASHION  CO-PILOT"
-          subtitle="AI · AI stylist · B2B2C"
-          body="A reference-based AI stylist that completes looks using curated visuals and smart similarity — no model fine-tuning required. Built for plug-and-play in multi-brand environments."
-        />
-
-        <CaseItem
-          title="CBDC Proposal"
-          subtitle="Digital currency · Central Bank Sandbox"
-          body="We participated in a competitive tender for a central bank's digital currency initiative. The proposal advanced into the regulatory sandbox."
-        />
-
-        <CaseItem
-           title="NDA Project — Hydropower Optimization"
-           subtitle="Energy systems · Infrastructure modeling · Miners"
-           body="We modeled demand-response strategies for variable hydro power, balancing system constraints and revenue potential. Project under NDA."
-         />
-
-        <CaseItem
-          title="NDA Project — Programmable Money Asset"
-          subtitle="Research · Fintech · Asset Design"
-          body="We contributed to the design of a novel investment instrument in the programmable money space. Details are under NDA. Intersection of investement asset, DLT, programable money."
-        />
-      </div>
-    </div>
-  );
-};
 
 export default function Home() {
   return (
@@ -244,13 +189,8 @@ export default function Home() {
         <HeroImage />
       </div>
 
-      {/* MAIN CONTENT
-         `container` centres and clamps the width, while `px-*`
-         provides the horizontal breathing-space that used to be
-         handled (incorrectly) by `mx-8`.                     */}
       <main className="container mx-auto flex flex-col gap-16 px-4 sm:px-8">
 
-        {/* Pitch */}
         <HeroPitch />
 
         {/* Sections */}
