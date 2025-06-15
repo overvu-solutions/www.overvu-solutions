@@ -161,7 +161,7 @@ const Team = () => {
           ⸺ EXPERIENCE
         </div>
         <div className=" text-left text-md max-w-2xl mb-8 text-black">
-          Together, we've built and deployed LLM systems across fintech,
+          Together, we&apos;ve built and deployed LLM systems across fintech,
           developer tools, fashion, and web3 — from infra to interface.
         </div>
 
