@@ -114,6 +114,37 @@ const BlockHeader = ({ title }: { title: string }) => {
   );
 };
 
+const Thesis = () => (
+  <section className="w-full mx-1 md:mx-8 py-8">
+    {/* Main section header */}
+    <BlockHeader title="thesis" />
+
+    {/* Core belief */}
+    <h3
+      className="text-left mb-4 uppercase font-semibold"
+    >
+      AI-native ventures outperform traditional players
+    </h3>
+
+    {/* WHY */}
+    <h4 className="font-semibold mb-2">Why</h4>
+    <ul className="list-disc list-inside space-y-2 text-sm leading-relaxed text-zinc-700 max-w-xl mb-6">
+      <li>AI-first processes are inherently more efficient.</li>
+      <li>Legacy organisations lag on innovation and speed.</li>
+    </ul>
+
+    {/* WE */}
+    <h4 className="font-semibold mb-2">We</h4>
+    <ul className="list-disc list-inside space-y-2 text-sm leading-relaxed text-zinc-700 max-w-xl">
+      <li>Help established players innovate with AI-native architecture.</li>
+      <li>Operate in true startup mode — rapid cycles, shipped code.</li>
+    </ul>
+  </section>
+);
+
+
+
+
 const Team = () => {
   return (
     <div className="w-full mx-1 md:mx-8">
@@ -194,6 +225,7 @@ export default function Home() {
         <HeroPitch />
 
         {/* Sections */}
+        <Thesis />
         <Team />
         <Cases />
         <Brands />
