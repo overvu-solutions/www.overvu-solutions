@@ -1,3 +1,4 @@
+import { BlockHeader } from "@/components/BlockHeader";
 
 import React from "react";
 import Image from "next/image";
@@ -5,92 +6,8 @@ import Avatar from "@/components/Avatar";
 
 import Cases from "@/components/Cases";
 import Services from "@/components/Services";
+import Brands from "@/components/Brands";
 
-const Ampersand = () => {
-  return (
-    <span className="mr-4 rotate" style={{ fontSize: "0.856em" }}>
-      §
-    </span>
-  );
-};
-
-const BlockHeader = ({ title }: { title: string }) => {
-  return (
-    <h3
-      className="text-left text-3xl mb-4 uppercase font-semibold "
-      style={{ letterSpacing: "0.08em" }}
-    >
-      <Ampersand /> {title}
-    </h3>
-  );
-};
-
-const Brands = () => {
-  return (
-    <ul className="flex flex-wrap items-center justify-center gap-x-8 sm:gap-x-12 gap-y-5 sm:gap-y-6">
-      <li className="h-[44px] sm:h-[56px] aspect-[5/2]">
-        <Image
-          alt="Cambridge"
-          loading="lazy"
-          width={537}
-          height={146}
-          className="h-full w-auto object-contain"
-          src="/media/cambridge.jpg"
-        />
-      </li>
-      <li className="h-[44px] sm:h-[56px] aspect-[909/589]">
-        <Image
-          alt="Revolut"
-          loading="lazy"
-          width={909}
-          height={589}
-          className="h-full w-auto object-contain"
-          src="/media/revolut.svg"
-        />
-      </li>
-      <li className="h-[44px] sm:h-[56px] aspect-[60/146]">
-        <Image
-          alt="Google"
-          loading="lazy"
-          width={60}
-          height={146}
-          className="h-full w-auto object-contain"
-          src="/media/google.svg"
-        />
-      </li>
-      <li className="h-[44px] sm:h-[56px] aspect-[131/137]">
-        <Image
-          alt="Techstars"
-          loading="lazy"
-          width={731}
-          height={137}
-          className="h-full w-auto object-contain"
-          src="/media/techstars.png"
-        />
-      </li>
-      <li className="h-[44px] sm:h-[56px] aspect-[909/589]">
-        <Image
-          alt="Wix"
-          loading="lazy"
-          width={909}
-          height={589}
-          className="h-full w-auto object-contain"
-          src="/media/wix1.svg"
-        />
-      </li>
-      <li className="h-[44px] sm:h-[56px] aspect-[909/589]">
-        <Image
-          alt="ETH"
-          loading="lazy"
-          width={909}
-          height={589}
-          className="h-full w-auto object-contain"
-          src="/media/eth.png"
-        />
-      </li>
-    </ul>
-  );
-};
 
 const HeroImage = () => {
   return (
@@ -111,8 +28,16 @@ const HeroImage = () => {
 const HeroPitch = () => {
   return (
     <div className="text-center  mx-8 text-gray-900  ">
-      <p className="mb-14 text-3xl sans-serif">
-        <em>Built to ship, not to demo.</em>
+      <h4 className="mb-24 text-5xl sans-serif">
+        Built to ship, not to demo.
+      </h4>
+
+      <p className="text-left text-md  text-gray-800 mb-8">
+          We are a boutique consultancy based in London and Luxembourg. From research to real-world, we architect, deploy, and scale AI-native software for ambitious teams.
+      </p>
+
+      <p className="text-left text-md  text-gray-800 mb-8">
+       	<strong>Applied AI. Real systems. Zero fluff</strong>
       </p>
     </div>
   );
@@ -195,11 +120,10 @@ export default function Home() {
       <main className="container mx-auto flex flex-col gap-16 px-4 sm:px-8">
         <HeroPitch />
 
-        {/* Sections */}
-        <Services />
         <Team />
-        <Cases />
         <Brands />
+        <Services />
+        <Cases />
 
         {/* CTA */}
         <div className="pt-16 text-center text-lg text-gray-600">
