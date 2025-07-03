@@ -11,13 +11,13 @@ import X from "@/components/svg/X";
 
 import "./globals.css";
 
-/* ————— fonts ————— */
-const fontV2 = Cormorant_Garamond({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-  display: "swap",
-  variable: "--font-cormorant-garamond",
-});
+// /* ————— fonts ————— */
+// const fontV2 = Cormorant_Garamond({
+//   subsets: ["latin"],
+//   weight: ["400", "700"],
+//   display: "swap",
+//   variable: "--font-cormorant-garamond",
+// });
 
 const font = Libre_Baskerville({
   weight: ["400", "700"],
@@ -26,10 +26,12 @@ const font = Libre_Baskerville({
   variable: "--font-libre-baskerville",
 });
 
-/* ————— metadata unchanged ————— */
-export const metadata: Metadata = { /* … */ };
+export const metadata: Metadata = {
+  title: "PRFX - AI Leadership Solutions",
+  description: "Turn your company into an industry leader with AI.",
+};
 
-const email = "partners@overvu.solutions";
+const email = "partners@prefixtree.xyz";
 
 export default function RootLayout({
   children,
@@ -93,7 +95,7 @@ export default function RootLayout({
           </a>
 
           <h3 className="text-lg">
-            © {new Date().getFullYear()} Prefix Tree Ventures
+            © {new Date().getFullYear()} Prefix Tree
           </h3>
         </footer>
       </body>

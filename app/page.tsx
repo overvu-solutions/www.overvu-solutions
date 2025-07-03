@@ -1,8 +1,29 @@
+
 import React from "react";
 import Image from "next/image";
 import Avatar from "@/components/Avatar";
 
 import Cases from "@/components/Cases";
+import Services from "@/components/Services";
+
+const Ampersand = () => {
+  return (
+    <span className="mr-4 rotate" style={{ fontSize: "0.856em" }}>
+      §
+    </span>
+  );
+};
+
+const BlockHeader = ({ title }: { title: string }) => {
+  return (
+    <h3
+      className="text-left text-3xl mb-4 uppercase font-semibold "
+      style={{ letterSpacing: "0.08em" }}
+    >
+      <Ampersand /> {title}
+    </h3>
+  );
+};
 
 const Brands = () => {
   return (
@@ -71,12 +92,6 @@ const Brands = () => {
   );
 };
 
-const Ampersand = () => {
-  return (
-    <span className="mr-4 rotate" style={{ fontSize: "0.856em" }}>§</span>
-  );
-};
-
 const HeroImage = () => {
   return (
     <div className="">
@@ -97,20 +112,9 @@ const HeroPitch = () => {
   return (
     <div className="text-center  mx-8 text-gray-900  ">
       <p className="mb-14 text-3xl sans-serif">
-           <em>Built to ship, not to demo.</em>
+        <em>Built to ship, not to demo.</em>
       </p>
     </div>
-  );
-};
-
-const BlockHeader = ({ title }: { title: string }) => {
-  return (
-    <h3
-      className="text-left text-3xl mb-4 uppercase font-semibold "
-      style={{ letterSpacing: "0.08em" }}
-    >
-      <Ampersand /> {title}
-    </h3>
   );
 };
 
@@ -183,17 +187,16 @@ export default function Home() {
   return (
     /* Prevent any accidental x-overflow as a final safety-net */
     <div className="min-h-screen overflow-x-hidden pb-20">
-
       {/* Hero logo row */}
       <div className="flex justify-center my-16">
         <HeroImage />
       </div>
 
       <main className="container mx-auto flex flex-col gap-16 px-4 sm:px-8">
-
         <HeroPitch />
 
         {/* Sections */}
+        <Services />
         <Team />
         <Cases />
         <Brands />
@@ -202,10 +205,7 @@ export default function Home() {
         <div className="pt-16 text-center text-lg text-gray-600">
           <p>
             Curious?{" "}
-            <a
-              href="mailto:partners@overvu.solutions"
-              className="underline"
-            >
+            <a href="mailto:partners@prefixtree.xyz" className="underline">
               Let&apos;s Talk
             </a>
           </p>
