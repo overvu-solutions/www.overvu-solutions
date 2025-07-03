@@ -44,7 +44,7 @@ export default function PrivacyPolicy() {
           Privacy Policy
         </h1>
         <p className="text-lg leading-relaxed">
-          At Prefix Tree Limited ("we," "us," or "our"), we are committed to protecting and respecting your privacy. This Privacy Policy outlines how we collect, use, store, and protect your personal data when you interact with us — including through our website, services, and client communications.
+          At Prefix Tree Limited (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;), we are committed to protecting and respecting your privacy. This Privacy Policy outlines how we collect, use, store, and protect your personal data when you interact with us — including through our website, services, and client communications.
         </p>
       </div>
 
@@ -141,7 +141,7 @@ export default function PrivacyPolicy() {
         <section>
           <SubSectionHeader title="9. Changes to This Policy" />
           <p className="leading-relaxed">
-            We may update this Privacy Policy to reflect changes in law, technology, or our operations. Any updates will be posted on our website with a revised "last updated" date.
+            We may update this Privacy Policy to reflect changes in law, technology, or our operations. Any updates will be posted on our website with a revised &ldquo;last updated&rdquo; date.
           </p>
         </section>
 
@@ -159,7 +159,7 @@ export default function PrivacyPolicy() {
 
       <div className="mt-12 pt-8 border-t border-gray-200">
         <p className="text-sm text-gray-600 text-center">
-          Last updated: 3/07/2025
+          Last updated: July 3, 2025
         </p>
       </div>
     </div>
