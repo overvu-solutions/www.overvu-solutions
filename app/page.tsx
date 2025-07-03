@@ -65,9 +65,9 @@ const Team = () => {
           link="https://www.linkedin.com/in/yaniv-proselkov/"
         />
         <Avatar
-          pic="i/sripaad.jpg"
-          name="Sripaad Srinivasan"
-          link="https://www.linkedin.com/in/sripaad-srinivasan/"
+          pic="i/IvanZhuravel.jpg"
+          name="Ivan Zhuravel"
+          link="https://www.linkedin.com/in/zhuravel-ivan-b8578560/"
         />
         <Avatar
           pic="i/valeria.jpg"

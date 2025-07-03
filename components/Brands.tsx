@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Brands = () => {
   return (
-    <ul className="flex flex-wrap items-center justify-center gap-x-8 sm:gap-x-12 gap-y-5 sm:gap-y-6">
+    <ul className="mx-auto px-18 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 sm:gap-x-12 gap-y-5 sm:gap-y-6 items-center justify-items-center">
       <li className="h-[44px] sm:h-[56px] aspect-[5/2]">
         <Image
           alt="Cambridge"
@@ -39,12 +39,12 @@ const Brands = () => {
           alt="Techstars"
           loading="lazy"
           width={731}
-          height={137}
+          height={237}
           className="h-full w-auto object-contain"
           src="/media/techstars.png"
         />
       </li>
-      <li className="h-[44px] sm:h-[56px] aspect-[909/589]">
+      <li className="h-[44px] sm:h-[56px] aspect-[809/589]">
         <Image
           alt="Wix"
           loading="lazy"
@@ -64,6 +64,17 @@ const Brands = () => {
           src="/media/eth.png"
         />
       </li>
+
+      <li className="h-[44px] sm:h-[56px] aspect-[809/589]">
+        <Image
+          alt="ETH"
+          loading="lazy"
+          width={909}
+          height={589}
+          className="h-full w-auto object-contain"
+          src="/media/Amazon_Web_Services_Logo.svg"
+        />      
+    </li>      
     </ul>
   );
 };

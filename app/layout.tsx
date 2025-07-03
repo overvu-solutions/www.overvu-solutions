@@ -1,9 +1,6 @@
 /* app/layout.tsx (Next 13+/14 root layout) */
 import type { Metadata } from "next";
-import {
-  Cormorant_Garamond,
-  Libre_Baskerville,
-} from "next/font/google";
+import { Cormorant_Garamond, Libre_Baskerville } from "next/font/google";
 import { Mail } from "lucide-react";
 
 import LinkedIn from "@/components/svg/LinkedIn";
@@ -41,9 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       {/* never let anything poke out horizontally */}
-      <body
-        className={`${font.className} overflow-x-hidden`}
-      >
+      <body className={`${font.className} overflow-x-hidden`}>
         {/* ---------- HEADER ---------- */}
         <header className="flex items-baseline justify-center py-12 px-4 sm:px-8">
           <a href="/" className="text-xl">
@@ -67,16 +62,26 @@ export default function RootLayout({
         </main>
 
         {/* ---------- FOOTER ---------- */}
-        <footer className="mt-48 pb-12 flex flex-wrap items-center justify-center gap-10 px-4 sm:px-8">
+        <footer className="mt-48 pb-12 flex  flex-wrap items-center justify-center gap-10 px-4 sm:px-8">
           <a
             href={`mailto:${email}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+            className="text-md flex items-center gap-2 hover:underline hover:underline-offset-4"
           >
             <Mail size={16} />
             Mail
           </a>
+
+          <a
+            href="/privacy"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-md flex items-center gap-2 hover:underline hover:underline-offset-4"
+          >
+            <span>Privacy</span>
+          </a>
+
           <a
             href="https://www.linkedin.com/company/overvue-solutions/"
             target="_blank"
@@ -94,9 +99,7 @@ export default function RootLayout({
             <X />
           </a>
 
-          <h3 className="text-lg">
-            © {new Date().getFullYear()} Prefix Tree
-          </h3>
+          <h3 className="text-lg">© {new Date().getFullYear()} Prefix Tree</h3>
         </footer>
       </body>
     </html>
