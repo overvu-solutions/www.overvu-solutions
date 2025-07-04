@@ -74,6 +74,11 @@ const Team = () => {
           name="Valeria Jannelli"
           link="https://www.linkedin.com/in/valeria-jannelli/"
         />
+        <Avatar
+          pic="i/anastasia.jpeg"
+          name="Anastasia Demchuk"
+          link="https://www.linkedin.com/in/anastasia-demchuk/"
+        />        
       </div>
 
       {/* 1) Founded‐By / Team Intro */}
