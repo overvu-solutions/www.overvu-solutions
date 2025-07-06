@@ -79,6 +79,7 @@ const Team = () => {
           name="Anastasia Demchuk"
           link="https://www.linkedin.com/in/anastasia-demchuk/"
         />        
+        
       </div>
 
       {/* 1) Founded‐By / Team Intro */}
@@ -86,7 +87,7 @@ const Team = () => {
       <div className="">
         <div className="text-xs text-gray-500 font-mono mb-1">⸺ FOUNDERS</div>
         <div className="text-left text-md max-w-2xl mb-8  text-black">
-          Founded by Pavel, Bohdan, and Yaniv — former senior contributors to
+          Founded by Pavel and Bohdan — former senior contributors to
           Revolut, Google, Techstars, and Cambridge.
         </div>
 
