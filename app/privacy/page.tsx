@@ -14,17 +14,6 @@ const Ampersand = () => {
   );
 };
 
-const SectionHeader = ({ title }: { title: string }) => {
-  return (
-    <h2
-      className="text-left text-2xl mb-4 uppercase font-semibold mt-8"
-      style={{ letterSpacing: "0.08em" }}
-    >
-      <Ampersand /> {title}
-    </h2>
-  );
-};
-
 const SubSectionHeader = ({ title }: { title: string }) => {
   return (
     <h3 className="text-left text-xl mb-3 font-semibold mt-6">

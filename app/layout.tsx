@@ -57,12 +57,17 @@ export default function RootLayout({
       <body className={`${font.className} overflow-x-hidden`}>
         {/* ---------- HEADER ---------- */}
         <header className="flex items-baseline justify-center py-12 px-4 sm:px-8">
-          <a href="/" className="text-xl">
-            <h1>PRFX</h1>
-          </a>
-
           {/* smaller left-margin on phones so the whole chunk stays < 100 vw */}
-          <nav className="ml-6 sm:ml-20 flex gap-7 text-xl">
+          <nav className="w-full items-baseline flex justify-between text-xl md:max-w-sm">
+            <a href="/" className="text-xl">
+              <h1>PRFX</h1>
+            </a>
+            <a
+              href="/blog"
+              className="hover:underline hover:underline-offset-4"
+            >
+              Blog
+            </a>
             <a
               href={`mailto:${email}`}
               className="hover:underline hover:underline-offset-4"

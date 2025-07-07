@@ -50,15 +50,15 @@ const Team = () => {
 
       <div className="flex flex-row justify-start flex-wrap gap-2 md:gap-2 my-10">
         <Avatar
-          pic="i/pavel.jpg"
-          name="Pavel Grachev-Mousset"
-          link="https://www.linkedin.com/in/pgrach/"
-        />
-        <Avatar
           pic="i/bohdan.jpg"
           name="Bohdan Snisar"
           link="https://www.linkedin.com/in/bsnisar/"
         />
+        <Avatar
+          pic="i/pavel.jpg"
+          name="Pavel Grachev-Mousset"
+          link="https://www.linkedin.com/in/pgrach/"
+        />        
         <Avatar
           pic="i/yaniv.jpg"
           name="Yaniv Proselkov"
