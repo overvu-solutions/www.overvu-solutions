@@ -33,7 +33,7 @@ const HeroPitch = () => {
       </h4>
 
       <p className="text-left text-md  text-gray-800 mb-8">
-          We are a boutique consultancy based in London and Luxembourg. From research to real-world, we architect, deploy, and scale AI-native software for ambitious teams.
+          We are a boutique consultancy based in London and Luxembourg. From research to real-world, we architect, deploy, and scale AI-native software in complient environments like fintech or biotech.
       </p>
 
       <p className="text-left text-md  text-gray-800 mb-8">
@@ -96,17 +96,8 @@ const Team = () => {
           ⸺ EXPERIENCE
         </div>
         <div className=" text-left text-md max-w-2xl mb-8 text-black">
-          Together, we&apos;ve built and deployed LLM systems across fintech,
-          developer tools, fashion, and web3 — from infra to interface.
-        </div>
-
-        {/* 3) New Web3 / Finance Line */}
-        <div className="text-xs text-gray-500 font-mono  mb-1">
-          ⸺ PERSPECTIVE
-        </div>
-        <div className="text-left text-md max-w-2xl mb-8  text-black">
-          Our backgrounds span financial infrastructure, applied research, and
-          intelligent systems — with a focus on deployment, not speculation
+          Together, we&apos;ve built and deployed Applied AI across fintech,
+          developer tools, and web3.
         </div>
       </div>
     </div>

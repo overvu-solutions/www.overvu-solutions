@@ -24,10 +24,10 @@ const font = Libre_Baskerville({
 });
 
 export const metadata: Metadata = {
-  title: "PRFX - AI Leadership Solutions",
+  title: "Prefix Tree - AI Leadership Solutions",
   description: "Turn your company into an industry leader with AI.",
   openGraph: {
-    title: "PRFX - AI Leadership Solutions",
+    title: "Prefix Tree - AI Leadership Solutions",
     description: "Turn your company into an industry leader with AI.",
     url: "https://prefixtree.xyz",
     siteName: "PRFX",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
         url: "https://prefixtree.xyz/og-image.png",
         width: 1200,
         height: 630,
-        alt: "PRFX - AI Leadership Solutions",
+        alt: "Prefix Tree - AI Leadership Solutions",
       },
     ],
     locale: "en_US",
