@@ -5,6 +5,10 @@ import path from 'path';
 import matter from 'gray-matter';
 import { remark } from 'remark';
 import html from 'remark-html';
+import remarkGfm from 'remark-gfm';
+import rehypeHighlight from 'rehype-highlight';
+import rehypeSlug from 'rehype-slug';
+import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 
 const postsDirectory = path.join(process.cwd(), 'posts');
 
@@ -65,9 +69,18 @@ export async function getPostData(id: string): Promise<BlogPost> {
   // Use gray-matter to parse the post metadata section
   const matterResult = matter(fileContents);
 
-  // Use remark to convert markdown into HTML string
+  // Use remark to convert markdown into HTML string with plugins
   const processedContent = await remark()
+    .use(remarkGfm) // GitHub Flavored Markdown
     .use(html)
+    .use(rehypeSlug) // Add IDs to headings
+    .use(rehypeAutolinkHeadings, {
+      behavior: 'wrap',
+      properties: {
+        className: ['heading-link'],
+      },
+    })
+    .use(rehypeHighlight) // Syntax highlighting
     .process(matterResult.content);
   const contentHtml = processedContent.toString();
 

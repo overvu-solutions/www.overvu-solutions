@@ -8,18 +8,20 @@ excerpt: 'A teardown from a boutique applied-AI agency'
 ## **1 - Why?**
 
 I’ve sat through enough “AI transformation” meetings to know the ending:
-Big Vision -> Impressive Slides -> “Let’s form a task force” -> Death by committee.
-
-Here’s what pisses me off:  everyone’s debating `strategy` some teams are just shipping.
+Big Vision -> Impressive Slides -> “Let’s form a task force” -> Death by committee. Here’s what pisses me off:  everyone’s debating `strategy` some teams are just shipping.
 
 One of them? ElevenLabs.
-
 Let me show you what execution looks like.
+
+---
 
 ## **2 - TL;DR**
 
 ElevenLabs killed the localization agency model by building a lean internal AI pipeline: ASR → LLM → TTS → Human QA.
+
 Result: 90% cost reduction, hours instead of weeks to launch, and the ability to ship campaigns in 30+ languages simultaneously.
+
+---
 
 ## **3 - What Changed?**
 
@@ -45,13 +47,14 @@ That broke the loop.
 - Cost = -90%
 - Quality = 90% AI, 10% human mod (on the edges)
 
-💡 **Critical unlock:**
+##### 💡 **Critical unlock:**
 
-It wasn’t just cost savings.
-
-They could **launch globally, simultaneously**—a growth advantage worth way more.
+- It wasn’t just cost savings.
+- They could **launch globally, simultaneously**—a growth advantage worth way more.
 
 That’s what I call Applied AI. No decks required.
+
+---
 
 
 ## 4 Patterns You Should Shamelessly Copy
@@ -70,7 +73,7 @@ You’ll find something equally dumb you’re overpaying for.
 
 
 
-### 4.1. Pattern #2 — Internal First, External Never
+### 4.2. Pattern #2 — Internal First, External Never
 
 They shipped for *one* team: marketing.
 
@@ -82,9 +85,8 @@ That meant:
 
 Don’t launch platforms. Solve your problem first.
 
----
 
-### 4.1. Pattern #3 — 90% Agent, 10% Human
+### 4.3. Pattern #3 — 90% Agent, 10% Human
 
 Forget the “autonomous AI” hype.
 
@@ -98,6 +100,8 @@ Here’s what works:
 
 - ⏱ 10% of the old workload
 - ✅ Higher quality
+
+---
 
 
 ## 5 The 6-Point Applied-AI Checklist

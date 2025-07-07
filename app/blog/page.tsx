@@ -17,7 +17,7 @@ export default async function Blog() {
           {allPostsData.map(({ id, date, title, excerpt }) => (
             <article
               key={id}
-              className="border-b border-gray-200 pb-8 last:border-b-0"
+              className="blog-post-article border-b border-gray-200 pb-8 last:border-b-0"
             >
               <Link href={`/blog/${id}`} className="block group">
                 <div className="mb-2">
